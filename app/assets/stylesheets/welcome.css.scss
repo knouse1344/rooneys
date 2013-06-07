@@ -4,13 +4,25 @@
 
 #page {
 	background: url("/assets/Rooney_splash_page.jpg");
-	background-size: 100%;
-	width: 100%;
-	min-height: 100%;
+	width: 1280px;
+	height: 1024px;
+	margin-left: auto;
+	margin-right: auto;
 
-	a {
-		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-		font-weight: 500;
-		color: #111;
+	.link {
+		width: 75px;
+		height: 25px;
+		position: relative;
+		top: 700px;
+		margin-left: auto;
+		margin-right: auto;
+
+		a {
+			font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+			font-weight: 700;
+			font-size: 1.75em;
+			text-decoration: none;
+			color: #4D0909;
+		}
 	}
 }
