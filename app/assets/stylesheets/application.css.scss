@@ -16,4 +16,47 @@ html, body {
 	width: 100%;
 	height: 100%;
 	background: #911010;
+	padding: 0;
+	margin: 0;
+}
+
+#footer {
+	font-family: 'Arial, helvetica' sans-serif;
+	font-size: .8em;
+	line-height: 1.25em;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	background: #888;
+	height: 135px;
+	color: #222;
+	text-align: center;
+	padding-top: 15px;
+	box-shadow: 0px -3px 10px #000;
+
+	.wrapper {
+		width: 940px;
+		margin-left: auto;
+		margin-right: auto;
+		display: table;
+		text-align: left;
+
+		.something {
+			width: 250px;
+			display: table-cell;
+			text-align: left;
+		}
+
+		.address {
+			width: 250px;
+			display: table-cell;
+			text-align: center;
+		}
+
+		.contact {
+			text-align: right;
+			width: 250px;
+			display: table-cell;		
+		}
+	}
 }

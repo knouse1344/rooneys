@@ -1,24 +1,27 @@
 <div id="page_main">
 
-	<div id="wrapper">
-        <a href="http://dev7studios.com" id="dev7link" title="Go to dev7studios">dev7studios</a>
-
-        <div class="slider-wrapper theme-default">
+        <div class="slider-wrapper theme-dark">
             <div id="slider" class="nivoSlider">
-                <img src="/assets/images/toystory.jpg" data-thumb="/assets/images/toystory.jpg" alt="" />
-                <a href="http://dev7studios.com"><img src="/assets/images/up.jpg" data-thumb="/assets/images/up.jpg" alt="" title="This is an example of a caption" /></a>
-                <img src="/assets/images/walle.jpg" data-thumb="/assets/images/walle.jpg" alt="" data-transition="slideInLeft" />
-                <img src="/assets/images/nemo.jpg" data-thumb="/assets/images/nemo.jpg" alt="" title="#htmlcaption" />
+                <img src="/assets/toystory.jpg" data-thumb="/assets/toystory.jpg" alt="" />
+                <img src="/assets/nemo.jpg" data-thumb="/assets/nemo.jpg" alt="" />
+                <img src="/assets/up.jpg" data-thumb="/assets/up.jpg" alt="" />
+                <img src="/assets/walle.jpg" data-thumb="/assets/walle.jpg" alt="" />
             </div>
             <div id="htmlcaption" class="nivo-html-caption">
                 <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
             </div>
         </div>
 
-    </div>
     <script type="text/javascript">
-    $(window).load(function() {
-        $('#slider').nivoSlider();
-    });
-    </script>
+		$(window).load(function() {
+		        $('#slider').nivoSlider({
+			        effect: 'random', // Specify sets like: 'fold,fade,sliceDown'
+			        slices: 10, // For slice animations
+			        animSpeed: 350, // Slide transition speed
+			        pauseTime: 5000, // How long each slide will show
+				});
+		    });
+
+	</script>
+
 </div>

@@ -8,7 +8,28 @@
 </head>
 <body>
 
-<%= yield %>
+	<div id="container">
+
+		<div id="navbar">
+			<a class="link" style="margin-right: 3em;" href="#"> Our Restaurant </a>
+			<a class="link" href="#"> Menu </a>
+			<a class="link _r" href="#"> Reservations </a>
+			<a class="link _r" style="margin-right: 3em;" href="#"> Contact Us </a>
+			<div class="logo"> Rooney's </div>
+		</div>
+
+
+		<%= yield %>
+	
+	</div>
+
+	<div id="footer">
+		<div class="wrapper">
+			<div class="something">  Follow Us!  </div>
+			<div class="address">  Rooney's Restaurant  </div>
+			<div class="contact">  Park Avenue  </div>
+		</div>
+	</div>
 
 </body>
 </html>

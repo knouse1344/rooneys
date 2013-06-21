@@ -12,6 +12,8 @@
 	position:relative;
 	width:100%;
 	height:auto;
+	margin-left: auto;
+	margin-right: auto;
 	overflow: hidden;
 }
 .nivoSlider img {
@@ -95,10 +97,10 @@
 	cursor:pointer;
 }
 .nivo-prevNav {
-	left:0px;
+	margin-right:700px;
 }
 .nivo-nextNav {
-	right:0px;
+	margin-right: 25px;
 }
 /* Control nav styles (e.g. 1,2,3...) */
 .nivo-controlNav {

@@ -9,14 +9,20 @@ Supports Thumbs: true
 */
 
 .theme-dark.slider-wrapper {
-    background: #222;
+    background: #911010;
     padding: 10px;
+    width: 900px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 .theme-dark .nivoSlider {
 	position:relative;
 	background:#fff url(loading.gif) no-repeat 50% 50%;
     margin-bottom:10px;
     overflow: visible;
+    box-shadow: 5px 5px 15px #000;
 }
 .theme-dark .nivoSlider img {
 	position:absolute;
@@ -33,6 +39,7 @@ Supports Thumbs: true
 	text-align: left;
 	padding: 0;
 	position: relative;
+	left: 425px;
 	z-index: 10;
 }
 .theme-dark .nivo-controlNav a {
@@ -50,29 +57,36 @@ Supports Thumbs: true
 
 .theme-dark .nivo-directionNav a {
 	display:block;
-	width:30px;
-	height:30px;
+	width:65px;
+	height:110px;
 	background: url(arrows.png) no-repeat;
+	background-size: 125px 95px;
 	text-indent:-9999px;
 	border:0;
 	top: auto;
-	bottom: -36px;
+	bottom: 125px;
 	z-index: 11;
+	opacity: .6;
+	-webkit-transition: all .15s ease-in-out;
+    -moz-transition: all .15s ease-in-out;
+    -ms-transition: all .15s ease-in-out;
+    -o-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
 }
 .theme-dark .nivo-directionNav a:hover {
-    background-color: #333;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
+    opacity: 1;
 }
 .theme-dark a.nivo-nextNav {
-	background-position:-16px 50%;
-	right:0px;
+	background-position: -60px 50%;
+	right:10px;
 }
 .theme-dark a.nivo-prevNav {
-    background-position:11px 50%;
+    background-position: 0px 75%;
     left: auto;
-	right: 35px;
+	right: 100px;
 }
 
 .theme-dark .nivo-caption {
