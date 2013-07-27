@@ -8,6 +8,9 @@
  */
  
 /* The Nivo Slider styles */
+.nivo_box {
+	margin-top: 20px;}
+
 .nivoSlider {
 	position:relative;
 	width:100%;

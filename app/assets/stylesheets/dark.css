@@ -9,10 +9,11 @@ Supports Thumbs: true
 */
 
 .theme-dark.slider-wrapper {
-    background: #911010;
+	background: #333;
     padding: 10px;
-    width: 900px;
-    margin-top: 40px;
+    width: 950px;
+    height: 430px;
+    margin-top: 70px;
     margin-left: auto;
     margin-right: auto;
 
