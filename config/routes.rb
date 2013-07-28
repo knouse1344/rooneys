@@ -4,6 +4,7 @@ Rooneys::Application.routes.draw do
 
   get 'welcome/index'
   get 'welcome/main'
+  get 'welcome/dinner'
 
 
   
