@@ -11,43 +11,6 @@
 	padding: 0;
 }
 
-#header {
-	height: 139px;
-	width: 100%;
-	background: url('/assets/header_bg.png') repeat-x;
-	padding-top: 45px;
-
-	#logo {
-		width:248px;
-		height: 123px;
-		position: absolute;
-		top: 5px;
-		left: 14%;
-	}
-
-	#grad {
-		background: url('/assets/header_grad.png') no-repeat;
-		width: 600px;
-		height: 138px;
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
-
-	#links {
-		height: 40px;
-		position: absolute;
-		left: 30%;
-
-		.link {
-			float: left;
-			width: 178px;
-			height: 37px;
-		}	
-	}
-}
-
-
 #slider_bg {
 	background: url('/assets/slider.png') no-repeat;
 	width: 1096px;
@@ -80,7 +43,7 @@
 #menu_top {
 	width: 1147px;
 	height: 171px;
-	background: url('/assets/content_wood_top.png') no-repeat;
+	background: url('/assets/content_menu_top.png') no-repeat;
 }
 
 #content_mid {

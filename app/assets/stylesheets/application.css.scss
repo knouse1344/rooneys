@@ -24,13 +24,50 @@ html, body {
 	clear: both;
 }
 
+#header {
+	height: 139px;
+	width: 100%;
+	background: url('/assets/header_bg.png') repeat-x;
+	padding-top: 45px;
+
+	#logo {
+		width:248px;
+		height: 123px;
+		position: absolute;
+		top: 5px;
+		left: 14%;
+	}
+
+	#grad {
+		background: url('/assets/header_grad.png') no-repeat;
+		width: 600px;
+		height: 138px;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	#links {
+		height: 40px;
+		position: absolute;
+		left: 30%;
+
+		.link {
+			float: left;
+			width: 178px;
+			height: 37px;
+		}	
+	}
+}
+
+
 #footer {
 	font-family: 'Arial, helvetica' sans-serif;
 	font-size: .8em;
 	line-height: 1.25em;
 	width: 100%;
 	position: relative;
-	bottom: -25px;
+	bottom: 0px;
 	background: #888;
 	height: 135px;
 	color: #222;
