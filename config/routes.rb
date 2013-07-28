@@ -3,8 +3,11 @@ Rooneys::Application.routes.draw do
   root to: "welcome#index"
 
   get 'welcome/index'
-  get 'welcome/main'
-  get 'welcome/dinner'
+  get 'welcome/menus'
+  get 'welcome/about'
+  get 'welcome/contact'
+  get 'welcome/events'
+  get 'welcome/reserve'
 
 
   
