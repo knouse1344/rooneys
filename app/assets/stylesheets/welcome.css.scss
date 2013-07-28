@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #container {
-	width: 1100px;
+	width: 1147px;
 	height: 100%;
 	margin-left: auto;
 	margin-right: auto;
@@ -15,7 +15,8 @@
 	background: url('/assets/slider.png') no-repeat;
 	width: 1096px;
 	height: 584px;
-	margin-top: 0px;
+	position: relative;
+	margin-top: -525px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -46,8 +47,39 @@
 	background: url('/assets/content_menu_top.png') no-repeat;
 }
 
+.menu_links {
+	font-size: 1.75em;
+	width: 900px;
+	height: 25px;
+	margin-top: -25px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: #E0A51B;
+
+	a {
+		color: #E0A51B;
+		text-decoration: none;
+	}
+	.llink {
+		margin-right: 135px;
+	}
+
+	.mlink {
+		margin-left: 135px;
+		margin-right: 135px;
+	}
+
+	.rlink {
+		margin-left: 135px;
+		margin-right: 0px;
+	}
+}
+
 #content_mid {
 	width: 1147px;
+	height: 596px;
 	color: #fafafa;
 	background: url('/assets/content_wood_mid.png') no-repeat;
 }
