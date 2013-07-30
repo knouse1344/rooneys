@@ -1,4 +1,5 @@
-<div id="menu_top"> </div>
+<div id="dinner">
+	<div id="menu_top"> </div>
 
 	<div class="menu_links">
 		<a class="llink" href="/welcome/dinner">Dinner</a>
@@ -9,23 +10,19 @@
 	</div>
 
 	<div id="content_mid">
+		<div class="container">
+			<h2><%= @perin.name %></h2>
+			<%= render @itemp %>
 
-		<h2><%= @perin.name %></h2>
-		<%= render @itemp %>
+			<h2><%= @insal.name %></h2>
+			<%= render @itemi %>	
 
-		<h2><%= @insal.name %></h2>
-		<%= render @itemi %>	
+			<h2><%= @pizza.name %></h2>
+			<%= render @item_pizza %>	
 
-		<h2><%= @pizza.name %></h2>
-		<%= render @item_pizza %>	
-
-		<h2><%= @pasta.name %></h2>
-		<%= render @item_pasta %>	
-
-		</br class="clear">
+			<h2><%= @pasta.name %></h2>
+			<%= render @item_pasta %>	
+		</div>
 	</div>
-
 	<div id="content_bot"> </div>
-
-
 </div>
