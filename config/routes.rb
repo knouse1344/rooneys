@@ -1,8 +1,6 @@
 Rooneys::Application.routes.draw do
 
   resources :sections
-
-
   resources :items
 
 
@@ -17,6 +15,7 @@ Rooneys::Application.routes.draw do
   get 'welcome/contact'
   get 'welcome/events'
   get 'welcome/reserve'
+  get 'welcome/dinner'
 
 
   
