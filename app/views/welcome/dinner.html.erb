@@ -1,0 +1,31 @@
+<div id="menu_top"> </div>
+
+	<div class="menu_links">
+		<a class="llink" href="/welcome/dinner">Dinner</a>
+		<span> | </span>
+		<a class="mlink" href="/welcome/wine">Wine</a>
+		<span> | </span>
+		<a class="rlink" href="/welcome/dessert">Dessert</a>
+	</div>
+
+	<div id="content_mid">
+
+		<h2><%= @perin.name %></h2>
+		<%= render @itemp %>
+
+		<h2><%= @insal.name %></h2>
+		<%= render @itemi %>	
+
+		<h2><%= @pizza.name %></h2>
+		<%= render @item_pizza %>	
+
+		<h2><%= @pasta.name %></h2>
+		<%= render @item_pasta %>	
+
+		</br class="clear">
+	</div>
+
+	<div id="content_bot"> </div>
+
+
+</div>
