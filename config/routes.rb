@@ -1,8 +1,11 @@
 Rooneys::Application.routes.draw do
 
+  get "maps/create"
+
   resources :sections
   resources :items
 
+  match 'maps' => 'maps#create', via: :post
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
