@@ -1,5 +1,11 @@
 Rooneys::Application.routes.draw do
 
+  resources :sections
+
+
+  resources :items
+
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
