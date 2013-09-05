@@ -19,6 +19,8 @@ Rooneys::Application.routes.draw do
   get 'welcome/events'
   get 'welcome/reserve'
   get 'welcome/dinner'
+  get 'welcome/wine'
+  get 'welcome/dessert'
 
 
   
