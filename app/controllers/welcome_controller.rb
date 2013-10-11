@@ -1,40 +1,43 @@
 class WelcomeController < ApplicationController
+  
+  force_ssl :except => :index, :dinner, :main, :wine, :dessert
+
   def index
   end
 
   def dinner
-    @perin = Section.find(1)
-    @itemp = @perin.items.sort!
-    @insal = Section.find(2)
-    @itemi = @insal.items.sort!
-    @pizza = Section.find(3)
-    @item_pizza = @pizza.items.sort!
-    @pasta = Section.find(4)
-    @item_pasta = @pasta.items.sort!
+    @perin = Dinnerection.find(1)
+    @itemp = @perin.dinneritems.sort!
+    @insal = Dinnersection.find(2)
+    @itemi = @insal.dinneritems.sort!
+    @pizza = Dinnersection.find(3)
+    @item_pizza = @pizza.dinneritems.sort!
+    @pasta = Dinnersection.find(4)
+    @item_pasta = @pasta.dinneritems.sort!
   end
 
   def main
   end
 
   def wine
-    @perin = Section.find(1)
-    @itemp = @perin.items.sort!
-    @insal = Section.find(2)
-    @itemi = @insal.items.sort!
-    @pizza = Section.find(3)
-    @item_pizza = @pizza.items.sort!
-    @pasta = Section.find(4)
-    @item_pasta = @pasta.items.sort!
+    @perin = Winesection.find(1)
+    @itemp = @perin.wineitems.sort!
+    @insal = Winesection.find(2)
+    @itemi = @insal.wineitems.sort!
+    @pizza = Winesection.find(3)
+    @item_pizza = @pizza.wineitems.sort!
+    @pasta = Winesection.find(4)
+    @item_pasta = @pasta.wineitems.sort!
   end
 
   def dessert
-    @perin = Section.find(1)
-    @itemp = @perin.items.sort!
-    @insal = Section.find(2)
-    @itemi = @insal.items.sort!
-    @pizza = Section.find(3)
-    @item_pizza = @pizza.items.sort!
-    @pasta = Section.find(4)
-    @item_pasta = @pasta.items.sort!
+    @perin = Winesection.find(1)
+    @itemp = @perin.wineitems.sort!
+    @insal = Winesection.find(2)
+    @itemi = @insal.wineitems.sort!
+    @pizza = Winesection.find(3)
+    @item_pizza = @pizza.wineitems.sort!
+    @pasta = Winesection.find(4)
+    @item_pasta = @pasta.wineitems.sort!
   end  
 end
