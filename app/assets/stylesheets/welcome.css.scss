@@ -47,9 +47,16 @@
 	background: url('/assets/content_menu_top.png') no-repeat;
 }
 
+@font-face {
+  font-family: 'MarcellusSC-Regular.ttf';
+  font-url:('MarcellusSC-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .menu_links {
 	font-size: 1.75em;
-	font-family: 'Marcellus SC', serif;
+	font-family: 'MarcellusSC-Regular';
 	width: 900px;
 	height: 25px;
 	margin-top: -25px;
