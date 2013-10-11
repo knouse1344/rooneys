@@ -11,7 +11,6 @@ class WelcomeController < ApplicationController
     @item_pizza = @pizza.items.sort!
     @pasta = Section.find(4)
     @item_pasta = @pasta.items.sort!
-    config.force_ssl = true
   end
 
   def main
