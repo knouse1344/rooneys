@@ -10,8 +10,6 @@ Winesection.create([{name: 'Per Cominciare', id: '1'}])
 Winesection.create([{name: 'Insalata', id: '2'}])
 Winesection.create([{name: 'Wood Fired Pizza', id: '3'}])
 Winesection.create([{name: 'Pasta & Entrees', id: '4'}])
-Winesection.create([{name: 'Sandwiches', id: '5'}])
-Winesection.create([{name: 'Bevande', id: '6'}])
 
 
 
@@ -19,7 +17,6 @@ Dinnersection.create([{name: 'Per Cominciare', id: '5'}])
 Dinnersection.create([{name: 'Insalata', id: '6'}])
 Dinnersection.create([{name: 'Wood Fired Pizza', id: '7'}])
 Dinnersection.create([{name: 'Pasta & Entrees', id: '8'}])
-Dinnersection.create([{name: 'Bevande', id: '9'}])
 
 
 Wineitem.create([{name: 'Bruschetta', price: '10', desc: 'Toasted Italian bread with basil infused oil, diced tomatoes, fresh mozzarella, and finished with fresh basil.', lunchsection_id: '1'},
@@ -49,18 +46,7 @@ Wineitem.create([{name: 'Bruschetta', price: '10', desc: 'Toasted Italian bread 
 			 {name: 'Pasta Rustica', price: '12', desc: 'Fettuccine, Italian sausage, green bell peppers, caramelized onions, fresh herbs, housemade marinara, and mozzarella cheese, topped with asiago cheese.', lunchsection_id: '4'},
 			 {name: 'Lasagna', price: '14', desc: 'Made with five cheeses and topped with housemade marinara sauce.', lunchsection_id: '4'},
 			 {name: 'Pasta con Funghi', price: '13', desc: 'Fettuccine with roasted wild mushrooms, garlic, shallots, fresh herbs, spinach in a light truffle cream sauce or light truffle broth.  Topped with Lively Run goat cheese.', lunchsection_id: '4'},
-			 {name: 'Homemade Ricotta Gnocchi with choice of sauce', price: '15', desc: ' ', lunchsection_id: '4'},
-			 {name: 'Classic Rib Eye Burger', price: '12', desc: 'Fresh ground rib eye patty with lettuce, sliced tomato, and mayo.', lunchsection_id: '5'},
-			 {name: 'Tuna Salad', price: '12', desc: 'White Albacore tuna mixed with mayo, celery, and sweet relish served with lettuce and tomato.', lunchsection_id: '5'},
-			 {name: 'Turkey BLT', price: '12', desc: 'Sliced turkey with crisp bacon, melted cheddar cheese, lettuce, tomato and mayo.', lunchsection_id: '5'},
-			 {name: 'Eggplant Parm', price: '11', desc: 'Breaded eggplant, baked with our housemade marinara sauce, and fresh mozzarella.', lunchsection_id: '5'},
-			 {name: 'Grilled Chicken Caesar', price: '12', desc: 'Free-range grilled chicken breast, served with tomatoes, Asiago cheese, Romaine lettuce and creamy Caesar dressing.', lunchsection_id: '5'},
-			 {name: 'Classic Egg Salad', price: '9', desc: 'Fresh chopped hard boiled eggs, mixed with mayo served on white bread with lettuce and tomato.', lunchsection_id: '5'},
-			 {name: 'Coffee, Iced Tea, Soda', price: '2.5', desc: nil, lunchsection_id: '6'},
-			 {name: 'Espresso', price: '2.5', desc: nil, lunchsection_id: '6'},
-			 {name: 'Double Espresso', price: '4', desc: nil, lunchsection_id: '6'},
-			 {name: 'Cappuccino', price: '4', desc: nil, lunchsection_id: '6'},
-			 {name: 'Beer and Wine Available', price: '', desc: nil, lunchsection_id: '6'}])
+			 {name: 'Homemade Ricotta Gnocchi with choice of sauce', price: '15', desc: ' ', lunchsection_id: '4'}])
 
 
 Dinneritem.create([{name: 'Antipasto for Two', price: '13', desc: 'Prosciutto accompanied with imported hot and sweet soppressata, fresh mozzarella, cerignola red and green olives topped with marinated artichokes.', dinnersection_id: '5'},
@@ -92,9 +78,4 @@ Dinneritem.create([{name: 'Antipasto for Two', price: '13', desc: 'Prosciutto ac
 			 {name: 'Lasagna', price: '14', desc: 'Five cheeses with house marinara.', dinnersection_id: '8'},
 			 {name: 'Pasta con Funghi', price: '17', desc: 'Fettuccine, roasted wild mushrooms, garlic, shallots, fresh herbs, spinach in a light truffle cream sauce or light truffle broth.  Topped with Lively Run goat cheese.', dinnersection_id: '8'},
 			 {name: 'Ricotta Gnocchi', price: '15', desc: 'Housemade with choice of sauce: Marinara, Vodka Cream, or Pesto Cream.', dinnersection_id: '8'},
-			 {name: 'Gluten free pasta available', price: '2', desc: nil, dinnersection_id: '8'},
-			 {name: 'Coffee, Iced Tea, Soda', price: '2.5', desc: nil, dinnersection_id: '9'},
-			 {name: 'Espresso', price: '2.5', desc: nil, dinnersection_id: '9'},
-			 {name: 'Double Espresso', price: '4', desc: nil, dinnersection_id: '9'},
-			 {name: 'Cappuccino', price: '4', desc: nil, dinnersection_id: '9'},
-			 {name: 'Beer and Wine Available', price: '', desc: nil, dinnersection_id: '9'}])
+			 {name: 'Gluten free pasta available', price: '2', desc: nil, dinnersection_id: '8'}])
