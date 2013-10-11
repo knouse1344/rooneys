@@ -1,5 +1,7 @@
 Rooneys::Application.routes.draw do
 
+  get "giftcards/index"
+
   get "maps/create"
 
   resources :sections
