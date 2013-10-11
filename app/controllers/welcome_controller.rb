@@ -4,7 +4,7 @@ class WelcomeController < ApplicationController
   end
 
   def dinner
-    @perin = Dinnerection.find(5)
+    @perin = Dinnersection.find(5)
     @itemp = @perin.dinneritems.sort!
     @insal = Dinnersection.find(6)
     @itemi = @insal.dinneritems.sort!
