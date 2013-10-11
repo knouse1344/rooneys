@@ -55,11 +55,36 @@ ActiveRecord::Schema.define(:version => 20130730130438) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "sections", :force => true do |t|
+  create_table "dinnersections", :force => true do |t|
     t.string   "identity"
     t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "dinneritems", :force => true do |t|
+    t.string   "desc"
+    t.string   "name"
+    t.string   "price"
+    t.integer  "lunchsection_id"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
+  create_table "winesections", :force => true do |t|
+    t.string   "identity"
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "wineitems", :force => true do |t|
+    t.string   "desc"
+    t.string   "name"
+    t.string   "price"
+    t.integer  "lunchsection_id"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
 end
