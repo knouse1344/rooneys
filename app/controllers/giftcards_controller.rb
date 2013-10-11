@@ -1,5 +1,7 @@
 class GiftcardsController < ApplicationController
-  config.force_ssl = true
+  
+  force_ssl
+  
   def index
   end
 end

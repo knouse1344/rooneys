@@ -24,7 +24,6 @@ Rooneys::Application.routes.draw do
   get 'welcome/wine'
   get 'welcome/dessert'
 
-  resource :giftcards, :constraints => { :protocol => "https", :subdomain => "secure" }
 
   
   # The priority is based upon order of creation:
