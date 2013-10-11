@@ -7,7 +7,6 @@ Rooneys::Application.configure do
   # Precompile additional assets
   config.assets.precompile += %w( .svg .eot .woff .ttf )
 
-  
   # Code is not reloaded between requests
   config.cache_classes = true
 
