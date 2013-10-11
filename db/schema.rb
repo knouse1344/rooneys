@@ -66,7 +66,7 @@ ActiveRecord::Schema.define(:version => 20130730130438) do
     t.string   "desc"
     t.string   "name"
     t.string   "price"
-    t.integer  "lunchsection_id"
+    t.integer  "dinnersection_id"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
   end
@@ -82,7 +82,7 @@ ActiveRecord::Schema.define(:version => 20130730130438) do
     t.string   "desc"
     t.string   "name"
     t.string   "price"
-    t.integer  "lunchsection_id"
+    t.integer  "winesection_id"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
   end
