@@ -1,0 +1,2 @@
+class DinneritemsController < ApplicationController
+end
