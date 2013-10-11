@@ -45,16 +45,7 @@ ActiveRecord::Schema.define(:version => 20130730130438) do
 
   add_index "admin_users", ["email"], :name => "index_admin_users_on_email", :unique => true
   add_index "admin_users", ["reset_password_token"], :name => "index_admin_users_on_reset_password_token", :unique => true
-
-  create_table "items", :force => true do |t|
-    t.string   "desc"
-    t.string   "name"
-    t.string   "price"
-    t.integer  "section_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
+  
   create_table "dinnersections", :force => true do |t|
     t.string   "identity"
     t.string   "name"
