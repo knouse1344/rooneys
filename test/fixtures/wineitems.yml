@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  desc: MyString
+  id: 1
+  name: MyString
+  price: 1
+  winesection_id: 1
+  winesection: MyString
+
+two:
+  desc: MyString
+  id: 1
+  name: MyString
+  price: 1
+  winesection_id: 1
+  winesection: MyString

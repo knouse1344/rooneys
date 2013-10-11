@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  desc: MyString
+  id: 1
+  name: MyString
+  price: 1
+  dinnersection_id: 1
+  dinnersection: MyString
+
+two:
+  desc: MyString
+  id: 1
+  name: MyString
+  price: 1
+  dinnersection_id: 1
+  dinnersection: MyString

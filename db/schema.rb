@@ -67,8 +67,8 @@ ActiveRecord::Schema.define(:version => 20130730130438) do
     t.string   "name"
     t.string   "price"
     t.integer  "winesection_id"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
   end
 
   create_table "winesections", :force => true do |t|
@@ -76,5 +76,6 @@ ActiveRecord::Schema.define(:version => 20130730130438) do
     t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-  end  
+  end
+
 end
