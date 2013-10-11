@@ -1,6 +1,4 @@
 class WelcomeController < ApplicationController
-  
-  force_ssl :except => :index, :dinner, :main, :wine, :dessert
 
   def index
   end
