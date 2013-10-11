@@ -4,7 +4,7 @@ class CreateDinneritems < ActiveRecord::Migration
       t.string :desc
       t.integer :id
       t.string :name
-      t.integer :price
+      t.string :price
       t.integer :dinnersection_id
       t.string :dinnersection
 

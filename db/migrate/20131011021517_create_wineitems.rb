@@ -4,7 +4,7 @@ class CreateWineitems < ActiveRecord::Migration
       t.string :desc
       t.integer :id
       t.string :name
-      t.integer :price
+      t.string :price
       t.integer :winesection_id
       t.string :winesection
 
