@@ -15,6 +15,11 @@ gem 'polyamorous'
 gem 'activesupport', '4.0.0'
 gem 'railties', '4.0.0'
 
+gem 'protected_attributes'
+gem 'rails-observers'
+gem 'actionpack-page_caching'
+gem 'actionpack-action_caching'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
