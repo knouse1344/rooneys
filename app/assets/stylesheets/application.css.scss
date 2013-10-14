@@ -13,7 +13,7 @@
  */
 
 html, body {
-	min-height: 100%;
+	height: 100%;
 	background: url('/assets/background.jpg') repeat;
 	padding: 0;
 	margin: 0;
@@ -32,14 +32,19 @@ html {
 	height: 139px;
 	width: 100%;
 	background: url('/assets/header_bg.png') repeat-x;
-	padding-top: 45px;
+
+	#head_container {
+		width: 1200px;
+		position: relative;
+		left: 50%;
+		margin-left: -600px;
+	}
 
 	#logo {
+		display: inline-block;
 		width:248px;
 		height: 123px;
-		position: absolute;
-		top: 5px;
-		left: 14%;
+		margin-top: 5px;
 	}
 
 	#grad {
@@ -52,17 +57,17 @@ html {
 	}
 
 	#links {
-		position: absolute;
-		left: 30%;
-		width: 900px;
+		display: inline-block;
+		position: relative;
+		top: -60px;
 		font-family: 'MarcellusSC-Regular';
 		border-bottom: 2px solid #aaa;
 
 		.link {
-			float: right;
+			display: inline-block;
 			height: 37px;
 			text-decoration: none;
-			font-size: 1.5em;
+			font-size: 1.3em;
 			color: #aaa;
 			text-shadow: 1px 1px 3px #000;
 			margin-right: 50px;
@@ -80,8 +85,7 @@ html {
 	font-size: 1em;
 	line-height: 1.25em;
 	width: 100%;
-	position: relative;
-	bottom: 0px;
+	position: absolute;
 	background: #444;
 	height: 180px;
 	color: #fafafa;

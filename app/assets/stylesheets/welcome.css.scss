@@ -3,11 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #container {
-	width: 1147px;
-	height: 100%;
+	width: 1083px;
+	min-height: 65%;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 80px;
+	margin-top: 50px;
+	position: relative;
 	padding: 0;
 }
 
@@ -22,7 +24,7 @@
 }
 
 #panel {
-	background: url('/assets/panel_wood.jpg') no-repeat;
+	background: url('/assets/panel_wood.jpg');
 	width: 1104px;
 	height: 216px;
 	margin-left: auto;
@@ -41,10 +43,21 @@
 	}
 }
 
+.title_banner {
+	background: url('/assets/panel01.png') no-repeat;
+	width: 1056px;
+	height: 71px;
+	position: relative;
+	top: -14px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 5;	
+}
+
 #menu_top {
-	width: 1147px;
-	height: 171px;
-	background: url('/assets/content_menu_top.png') no-repeat;
+	width: 1083px;
+	height: 158px;
+	background: url('/assets/content_wood_top.jpg') no-repeat;
 }
 
 @font-face {
@@ -86,15 +99,15 @@
 }
 
 #content_mid {
-	width: 1147px;
+	width: 1083px;
 	color: #fafafa;
-	background: url('/assets/content_wood_mid.png') repeat-y;
+	background: url('/assets/content_wood_mid.jpg') repeat-y;
 }
 
 #content_bot {
-	width: 1147px;
-	height: 174px;
-	background: url('/assets/content_wood_bot.png') no-repeat;
+	width: 1083px;
+	height: 133px;
+	background: url('/assets/content_wood_bot.jpg') no-repeat;
 }
 
 #dinner {
