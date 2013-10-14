@@ -13,7 +13,7 @@ gem "meta_search"
 
 gem 'polyamorous'
 gem 'active_support'
-
+gem 'activesupport'
 gem 'railties'
 
 # Gems used only for assets and not required
