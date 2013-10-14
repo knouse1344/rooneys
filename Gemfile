@@ -12,14 +12,13 @@ gem 'activeadmin', :git => 'git://github.com/gregbell/active_admin.git'
 gem "meta_search"
 
 gem 'polyamorous'
-gem 'active_support'
-gem 'activesupport'
-gem 'railties'
+gem 'activesupport', '4.0.0'
+gem 'railties', '4.0.0'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
+  gem 'sass-rails',   '~> 4.0.0'
   gem 'coffee-rails'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
