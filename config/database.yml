@@ -17,7 +17,7 @@ development:
 test:
   adapter: postgresql
   database: rooneys_test
-  host: 
+  host: localhost
   pool: 5
   username: postgres
   password: brybo1423
