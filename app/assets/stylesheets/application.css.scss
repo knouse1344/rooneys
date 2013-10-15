@@ -13,17 +13,17 @@
  */
 
 html, body {
-	height: 100%;
+	min-height: 100%;
+	width: 100%;
 	background: url('/assets/background.jpg') repeat;
 	padding: 0;
 	margin: 0;
 	overflow-x: hidden;
 }
 
-html {
-	overflow-y: scroll;
+body {
+	position: absolute;
 }
-
 .clear {
 	clear: both;
 }
@@ -79,18 +79,18 @@ html {
 	}
 }
 
-
 #footer {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	font-size: 1em;
 	line-height: 1.25em;
 	width: 100%;
-	position: absolute;
 	background: #444;
+	position: relative;
+	bottom: 0;
+	margin-top: 240px;
 	height: 180px;
 	color: #fafafa;
 	text-align: center;
-	padding-top: 15px;
 	box-shadow: 0px -3px 15px #333;
 
 	h1 {
