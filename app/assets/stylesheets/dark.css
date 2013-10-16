@@ -13,7 +13,6 @@ Supports Thumbs: true
     padding: 10px;
     width: 950px;
     height: 430px;
-    margin-top: 70px;
     margin-left: auto;
     margin-right: auto;
 
@@ -21,7 +20,8 @@ Supports Thumbs: true
 .theme-dark .nivoSlider {
 	position:relative;
 	background:#fff url(loading.gif) no-repeat 50% 50%;
-    margin-bottom:10px;
+    bottom: 15px;
+    left: 8px;
     overflow: visible;
     box-shadow: 5px 5px 15px #000;
 }
@@ -40,8 +40,9 @@ Supports Thumbs: true
 	text-align: left;
 	padding: 0;
 	position: relative;
+	bottom: 50px;
 	left: 425px;
-	z-index: 10;
+	z-index: 40;
 }
 .theme-dark .nivo-controlNav a {
 	display:inline-block;
