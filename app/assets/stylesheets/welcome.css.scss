@@ -155,6 +155,12 @@
 
 #about {
 
+	h1 {
+		margin: 0 0 60px 0;
+		padding: 0;
+		text-align: center;
+	}
+
 	#gallery {
 		width: 900px;
 		margin-left: auto;
@@ -179,7 +185,7 @@
 
 	#description {
 		width: 900px;
-		padding-top: 80px;
+		padding-top: 40px;
 		margin-left: auto;
 		margin-right: auto;
 
@@ -191,6 +197,12 @@
 }
 
 #reserve {
+
+	h1 {
+		text-align: center;
+		margin:0 0 40px 0;
+		padding: 0;
+	}
 
 	#description {
 		width: 900px;
@@ -204,6 +216,12 @@
 }
 
 #events {
+
+	h1 {
+		text-align: center;
+		margin:0 0 40px 0;
+		padding: 0;
+	}
 
 	#description {
 		width: 900px;
@@ -224,7 +242,7 @@
 		height: 350px;
 		padding: 15px;
 		float: left;
-		margin-left: 90px;
+		margin-left: 65px;
 
 		h2 {
 			margin-top: 40px;
