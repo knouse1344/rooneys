@@ -28,6 +28,8 @@ production:
   database: rooneys_production
   host: 
   pool: 5
+  port: 5433
   username: postgres
   password: brybo1423
+  reconnect: true
 
