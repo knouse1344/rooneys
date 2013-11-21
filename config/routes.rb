@@ -1,5 +1,8 @@
 Rooneys::Application.routes.draw do
 
+  resources :users
+  resources :gifts
+  
   get "giftcards/index"
 
   get "maps/create"

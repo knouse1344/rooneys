@@ -1,17 +1,12 @@
 class WelcomeController < ApplicationController
 
-  def index
-  end
-
   def dinner
-    @perin = Dinnersection.find(5)
-    @itemp = @perin.dinneritems.sort!
-    @insal = Dinnersection.find(6)
-    @itemi = @insal.dinneritems.sort!
-    @pizza = Dinnersection.find(7)
-    @item_pizza = @pizza.dinneritems.sort!
-    @pasta = Dinnersection.find(8)
-    @item_pasta = @pasta.dinneritems.sort!
+    @appetizer = Dinnersection.find(5)
+    @appetizers = @appetizer.dinneritems.sort!
+    @salad = Dinnersection.find(6)
+    @salads = @salad.dinneritems.sort!
+    @entree = Dinnersection.find(7)
+    @entrees = @entree.dinneritems.sort!
   end
 
   def main
@@ -29,5 +24,17 @@ class WelcomeController < ApplicationController
   end
 
   def dessert
+    @wine1 = Winesection.find(1)
+    @onewines = @wine1.wineitems.sort!
+    @wine2 = Winesection.find(2)
+    @twowines = @wine2.wineitems.sort!
+    @wine3 = Winesection.find(3)
+    @threewines = @wine3.wineitems.sort!
+    @wine4 = Winesection.find(4)
+    @fourwines = @wine4.wineitems.sort!
   end  
+
+  def index
+    @user = User.new(params[:id])
+  end
 end

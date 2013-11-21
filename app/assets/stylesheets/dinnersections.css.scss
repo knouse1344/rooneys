@@ -1,3 +1,23 @@
 // Place all the styles related to the dinnersections controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.dinnertitle {
+	font-size: 1.4em;
+	color: #eee;
+	text-transform: uppercase;
+}
+
+.price {
+	float: right;
+	font-size: 1.4em;
+	opacity: .8;
+}
+
+.desc {
+	padding-bottom: 20px;
+	padding-top: 4px;
+	font-family: 'Open Sans', sans-serif;
+	opacity: .75;
+}

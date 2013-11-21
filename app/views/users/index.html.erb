@@ -1,0 +1,41 @@
+<div id="mailinglist">
+
+  <div id="menu_top"> 
+    <div class="about_banner"> </div>
+  </div>
+
+  <div id="content_mid">
+
+    <h1>Listing Newsletter Members</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <%= link_to 'Create a New Mail Recipient', new_user_path, class: "newuser" %>
+
+      <tbody>
+        <% @users.each do |user| %>
+          <tr>
+            <td style="padding-right: 20px;"><%= user.email %></td>
+            <td><%= link_to 'Show', user %></td>
+            <td><%= link_to 'Edit', edit_user_path(user) %></td>
+            <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+    <br>
+  </div>
+
+  <div id="content_bot"> </div>
+  
+</div>

@@ -9,7 +9,6 @@ gem 'rails', '~> 4.0.0'
 gem 'pg'
 
 gem 'activeadmin', :git => 'git://github.com/gregbell/active_admin.git'
-gem "meta_search"
 
 gem 'polyamorous'
 gem 'activesupport', '4.0.0'

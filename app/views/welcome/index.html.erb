@@ -37,22 +37,17 @@
             Sunday: Closed
         </div>
         <div class="fooditems">
-            <!-- Begin MailChimp Signup Form -->
-            <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
-            <style type="text/css">
-                #mc_embed_signup{background:#fff; clear:left; font: Helvetica,Arial,sans-serif;  width:500px;}
-                /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-                   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-            </style>
-            <div id="mc_embed_signup" style="background: transparent;">
-            <form action="http://responsive.us7.list-manage.com/subscribe/post?u=c41cb6667c281474eb86d0e72&amp;id=93f1836430" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                
-                <input type="email" style="float: right;" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-                <div class="clear"><input style="float: right;margin-right: 19px;" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-            </form>
-            </div>
 
-            <!--End mc_embed_signup-->
+            <%= form_for(@user) do |f| %>
+                  <div class="field">
+                    <%= f.label :email, "Enter your email address below:", class: "label" %><br>
+                    <%= f.text_field :email, class: "input" %>
+                  </div>
+                  <div class="actions">
+                    <%= f.submit "Add Me!", class: "submit" %>
+                  </div>
+            <% end %>
+
         </div>
     </div>
 </div>
