@@ -12,6 +12,10 @@ class WelcomeController < ApplicationController
   def main
   end
 
+  def events
+    
+  end
+
   def wine
     @wine1 = Winesection.find(1)
     @onewines = @wine1.wineitems.sort!
