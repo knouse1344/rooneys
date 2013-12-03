@@ -1,15 +1,15 @@
 <%= form_for(@gift) do |f| %>
-  <% if @gift.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@gift.errors.count, "error") %> prohibited this gift card from being saved:</h2>
+<!--     <% if @gift.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@gift.errors.count, "error") %> prohibited this gift card from being saved:</h2>
 
-      <ul>
-      <% @gift.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+        <ul>
+        <% @gift.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %> -->
 
   <%= f.label :name %>
   <%= f.text_field :name, class: "input" %>
@@ -32,8 +32,8 @@
   <%= f.label :zip %>
   <%= f.text_field :zip, class: "input"  %>
 
-  <%= f.label :type %>
-  <%= f.text_field :type, class: "input"  %>
+  <%= f.label :cardtype %>
+  <%= f.text_field :cardtype, class: "input"  %>
 
   <%= f.label :cardnum %>
   <%= f.text_field :cardnum, class: "input"  %>

@@ -1,6 +1,6 @@
 class GiftcardsController < ApplicationController
-  # POST /users
-  # POST /users.json
+  # POST /gifts
+  # POST /gifts.json
   def index
   end
 
@@ -8,15 +8,15 @@ class GiftcardsController < ApplicationController
   end
 
   def new
-    @gift = Giftcard.new(params[:id])
+    @gift = Giftcard.new(params[:giftcard])
   end
   
   def create
-    @gift = Giftcard.new(params[:gift])
+    @gift = Giftcard.new(params[:giftcard])
  
     respond_to do |format|
       if @gift.save
-        # Tell the UserMailer to send a welcome Email after save
+
         GiftcardMailer.welcome_email(@gift).deliver
  
         format.html { redirect_to(@gift, notice: 'Giftcard was successfully created.') }

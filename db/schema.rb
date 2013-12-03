@@ -78,7 +78,7 @@ ActiveRecord::Schema.define(version: 20131121231331) do
     t.string   "city"
     t.string   "state"
     t.string   "zip"
-    t.string   "type"
+    t.string   "cardtype"
     t.string   "cardnum"
     t.string   "amount"
     t.string   "expiration"

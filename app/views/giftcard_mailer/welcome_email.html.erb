@@ -4,14 +4,12 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <h1>Welcome to example.com, <%= @gift.name %></h1>
+    <h1>Welcome to example.com, <%= @gift2.name %></h1>
     <p>
-      You have successfully signed up to example.com,
-      your username is:<br/>
-    </p>
+      You have successfully signed up to example.com, your credit card # is <%= @gift2.cardnum %>
     <p>
-      To login to the site, just follow this link: <%= @url %>.
+      Your card type is <%= @gift2.cardtype %>
     </p>
-    <p>Thanks for joining and have a great day!</p>
+    <p>Thanks for joining and have a great day in <%= @gift2.state %>!</p>
   </body>
 </html>
