@@ -23,10 +23,18 @@ Rooneys::Application.configure do
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   config.action_mailer.delivery_method = :smtp
   # change to true to allow email to be sent during development
-  config.action_mailer.perform_deliveries = false
+  config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.default :charset => "utf-8"
 
+  config.action_mailer.smtp_settings = {
+    :address   => "smtp.mandrillapp.com",
+    :port      => 587, # ports 587 and 2525 are also supported with STARTTLS
+    :enable_starttls_auto => true, # detects and uses STARTTLS
+    :user_name => "bryan@responsive.co",
+    :password  => "Lp6Cw7vaxLfpPZZ3TKpBHw", # SMTP password is any valid API key
+    :authentication => 'login', # Mandrill supports 'plain' or 'login'
+  }  
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
 

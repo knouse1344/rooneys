@@ -38,10 +38,13 @@ Rooneys::Application.configure do
 
   config.action_mailer.smtp_settings = {
     :address   => "smtp.mandrillapp.com",
-    :port      => 587,
-    :user_name => ENV["bryan@responsive.co"],
-    :password  => ENV["Lp6Cw7vaxLfpPZZ3TKpBHw"]
-  }
+    :port      => 25, # ports 587 and 2525 are also supported with STARTTLS
+    :enable_starttls_auto => true, # detects and uses STARTTLS
+    :user_name => "bryan@responsive.co",
+    :password  => "brybo1423", # SMTP password is any valid API key
+    :authentication => 'login', # Mandrill supports 'plain' or 'login'
+    :domain => 'www.rooneysrestaurant.com', # your domain to identify your server when connecting
+  }  
 
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH

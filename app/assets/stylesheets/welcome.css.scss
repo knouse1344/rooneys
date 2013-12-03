@@ -425,6 +425,15 @@
 		padding: 0;
 	}
 
+	.container {
+		width: 450px;
+		padding-left: 60px;
+	}
+
+	.input {
+		font-size: 1.2em;
+	}
+
 	#signup {
 		margin-top: 0;
 		width: 400px;
@@ -436,10 +445,6 @@
 			width: 200px;
 			padding: 10px;
 			font-size: 14px;
-		}
-
-		.input {
-			font-size: 1.1em;
 		}
 	}
 

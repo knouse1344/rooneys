@@ -1,7 +1,7 @@
 Rooneys::Application.routes.draw do
 
+  resources :giftcards
   resources :users
-  resources :gifts
   
   get "giftcards/index"
 

@@ -1,3 +1,4 @@
+#encoding: utf-8
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
 #
@@ -6,10 +7,13 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Winesection.create([{name: 'Per Cominciare', id: '1'}])
-Winesection.create([{name: 'Insalata', id: '2'}])
-Winesection.create([{name: 'Wood Fired Pizza', id: '3'}])
-Winesection.create([{name: 'Pasta & Entrees', id: '4'}])
+
+Winesection.create([{name: 'Red Wines of the World', id: '1'}])
+Winesection.create([{name: 'American Red Wines', id: '2'}])
+Winesection.create([{name: 'White Wines of the World', id: '3'}])
+Winesection.create([{name: 'American White Wines', id: '4'}])
+Winesection.create([{name: 'Champagne & Sparkling Wines', id: '5'}])
+Winesection.create([{name: 'Dessert Wines', id: '6'}])
 
 
 
@@ -18,18 +22,44 @@ Dinnersection.create([{name: 'Salads', id: '6'}])
 Dinnersection.create([{name: 'House Specialties', id: '7'}])
 
 
-Wineitem.create([{name: 'Bruschetta', price: '10', desc: 'Toasted Italian bread with basil infused oil.', winesection_id: '1'},
-			{name: 'Brisquetta', price: '10', desc: 'Toasted Italian bread with basil infused oil.', winesection_id: '1'},
-			{name: 'Wine 1', price: '10', desc: 'Toasted Italian bread with basil infused oil.', winesection_id: '1'},
-			{name: 'Cbernet ', price: '10', desc: 'Toasted Italian bread with basil infused oil.', winesection_id: '2'},
-			{name: 'Cabernet Sauvignon', price: '10', desc: 'Toasted Italian bread with basil infused oil.', winesection_id: '2'},
-			{name: 'Cab Sauv', price: '10', desc: 'Toasted Italian bread with basil infused oil.', winesection_id: '2'},
-			{name: 'Somethign Else', price: '10', desc: 'Toasted Italian bread with basil infused oil.', winesection_id: '3'},
-			{name: 'I cant think', price: '10', desc: 'Toasted Italian bread with basil infused oil.', winesection_id: '3'},
-			{name: 'This isn', price: '10', desc: 'Toasted Italian bread with basil infused oil.', winesection_id: '3'},
-			{name: 'Stupid apostrophes', price: '10', desc: 'Toasted Italian bread with basil infused oil.', winesection_id: '4'},
-			{name: 'Is that even what they', price: '10', desc: 'Toasted Italian bread with basil infused oil.', winesection_id: '4'},
-			{name: 're called?', price: '10', desc: 'Toasted Italian bread with basil infused oil.', winesection_id: '4'}])
+Wineitem.create([{name: 'Beaune du Château, Bouchard Père et Fils, "Premier Cru"', price: '68', desc: 'Burgundy, 2009', winesection_id: '1'},
+			{name: 'Domaine Raphaël Dubois, Nuits-Saint-Georges', price: '72', desc: 'Burgundy, 2009', winesection_id: '1'},
+			{name: 'Nuits-Saint-Georges,  Bouchard Père et Fils, "Premier Cru"', price: '90', desc: 'Burgundy, 2009', winesection_id: '1'},
+			{name: 'Château La Nerthe', price: '70', desc: 'Châteauneuf-du-Pape, 2009', winesection_id: '1'},
+			{name: 'Saint Cosme', price: '35', desc: 'Côtes Du Rhône, 2012', winesection_id: '1'},
+			{name: 'Lacoste Borie', price: '75', desc: 'Pauillac, 2009', winesection_id: '1'},
+			{name: 'Hauts de Pontet-Canet', price: '120', desc: 'Pauillac, 2005 [Wine Spectator 90 pts]', winesection_id: '1'},
+			{name: "Blason D'Issan", price: '65', desc: 'Margaux, 2007', winesection_id: '1'},
+			{name: 'Les Hauts Du Tertre', price: '60', desc: 'Margaux, 2006', winesection_id: '1'},
+			{name: 'La Sirene de Giscours', price: '80', desc: 'Margaux, 2005', winesection_id: '1'},
+			{name: 'Chateau La Tour Carnet, "Grand Cru"', price: '85', desc: 'Haut Médoc, 2003', winesection_id: '1'},
+			{name: 'Les Allées de Cantemerle', price: '50', desc: 'Haut Médoc, 2009', winesection_id: '1'},
+			{name: 'Chateau Simard', price: '55', desc: 'St. Emilion, 2001', winesection_id: '1'},
+			{name: 'Château  Puy Mouton , "Grand Cru"', price: '65', desc: 'St. Émilion, 2009', winesection_id: '1'},
+			{name: 'Château  Fombrauge, "Grand Cru"', price: '85', desc: 'St. Émilion, 2004', winesection_id: '1'},
+			{name: 'Stella, Chianti, DOCG', price: '30', desc: 'Tuscany, 2011', winesection_id: '1'},
+			{name: 'Valdipiatta, DOCG Vino Nobile di Montepulciasno', price: '50', desc: 'Tuscany, 2009 [Wine Advocate 91 pts]', winesection_id: '1'},
+			{name: 'Altesino, Brunello di Montalcino, DOCG', price: '95', desc: 'Tuscany, 2008 [Wine Spectator 92 pts]', winesection_id: '1'},
+			{name: 'Serradenari Viticoltori in La Morra, Barolo, DOCG', price: '68', desc: 'Piedmont, 2008', winesection_id: '1'},
+			{name: 'Campo Viejo " Gran Reserva"', price: '48', desc: 'Rioja Spain, 2004', winesection_id: '1'},
+			{name: 'MollyDooker The Boxer Shiraz', price: '45', desc: 'Australia, 2012', winesection_id: '1'},
+			{name: 'Jim Barry The Lodge Hill Shiraz', price: '40', desc: 'Australia, 2010', winesection_id: '1'},
+			{name: 'MollyDooker Two Left Feet', price: '55', desc: 'Australia, 2010 [Wine Advocate 90 pts]', winesection_id: '1'},
+			{name: 'Catena Malbec', price: '45', desc: 'Mendoza, Argentina 2011', winesection_id: '1'},
+			{name: 'Opus One', price: '270', desc: 'Napa Valley, 2007 [Wine Advocate 95 pts]', winesection_id: '2'},
+			{name: 'Opus One', price: '270', desc: 'Napa Valley, 2007 [Wine Advocate 95 pts]', winesection_id: '3'},
+			{name: 'Opus One', price: '270', desc: 'Napa Valley, 2007 [Wine Advocate 95 pts]', winesection_id: '4'},
+			{name: 'NV Korbel Brut', price: '6', desc: 'California', winesection_id: '5'},
+			{name: 'NV Bouvet Signature Brut', price: '30', desc: 'France', winesection_id: '5'},
+			{name: 'NV Perrier Jouet, Grand Brut', price: '42', desc: ' ', winesection_id: '5'},
+			{name: 'NV Cinzano Asti Spumante', price: '26', desc: 'Italy', winesection_id: '5'},
+			{name: 'NV Taittinger Brut "La Francaise" (1/2 btl)', price: '38', desc: 'France', winesection_id: '5'},
+			{name: 'NV Vueve Cliquot "Yellow Label" Brut (1/2 btl)', price: '36', desc: 'France', winesection_id: '5'},
+			{name: 'NV Vueve Cliquot "Yellow Label" Brut', price: '68', desc: 'France', winesection_id: '5'},
+			{name: 'NV Moet & Chandon "White Star" (1/2 btl)', price: '32', desc: 'France', winesection_id: '5'},
+			{name: 'NV Moet & Chandon "White Star"', price: '58', desc: 'France', winesection_id: '5'},
+			{name: '1996 Perrie Jouet "Fleur de Champagne', price: '125', desc: '', winesection_id: '5'},
+			{name: '1995 Taittinger Blanc de Blancs', price: '185', desc: 'France', winesection_id: '5'}])
 
 
 
