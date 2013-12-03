@@ -33,7 +33,7 @@ Rooneys::Application.configure do
     :enable_starttls_auto => true, # detects and uses STARTTLS
     :user_name => "bryan@responsive.co",
     :password  => "Lp6Cw7vaxLfpPZZ3TKpBHw", # SMTP password is any valid API key
-    :authentication => 'login', # Mandrill supports 'plain' or 'login'
+    :authentication => 'login' # Mandrill supports 'plain' or 'login'
   }  
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin

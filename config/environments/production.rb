@@ -33,17 +33,16 @@ Rooneys::Application.configure do
   # Setup for production - deliveries, no errors raised
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
   config.action_mailer.default :charset => "utf-8"
 
   config.action_mailer.smtp_settings = {
     :address   => "smtp.mandrillapp.com",
-    :port      => 25, # ports 587 and 2525 are also supported with STARTTLS
+    :port      => 587, # ports 587 and 2525 are also supported with STARTTLS
     :enable_starttls_auto => true, # detects and uses STARTTLS
     :user_name => "bryan@responsive.co",
-    :password  => "brybo1423", # SMTP password is any valid API key
-    :authentication => 'login', # Mandrill supports 'plain' or 'login'
-    :domain => 'www.rooneysrestaurant.com', # your domain to identify your server when connecting
+    :password  => "Lp6Cw7vaxLfpPZZ3TKpBHw", # SMTP password is any valid API key
+    :authentication => 'login' # Mandrill supports 'plain' or 'login'
   }  
 
   # Defaults to nil and saved in location specified by config.assets.prefix
