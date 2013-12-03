@@ -19,7 +19,7 @@ class GiftcardsController < ApplicationController
 
         GiftcardMailer.welcome_email(@gift).deliver
  
-        format.html { redirect_to(@gift, notice: 'Giftcard was successfully created.') }
+        format.html { redirect_to('/giftcards/show') }
         format.json { render json: @gift, status: :created, location: @gift }
       else
         format.html { render action: 'new' }

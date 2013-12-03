@@ -78,10 +78,12 @@ ActiveRecord::Schema.define(version: 20131121231331) do
     t.string   "city"
     t.string   "state"
     t.string   "zip"
+    t.string   "buyername"
     t.string   "cardtype"
     t.string   "cardnum"
     t.string   "amount"
     t.string   "expiration"
+    t.text     "comments"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

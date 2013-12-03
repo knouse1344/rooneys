@@ -8,10 +8,12 @@ class CreateGiftcards < ActiveRecord::Migration
       t.string :city
       t.string :state
       t.string :zip
+      t.string :buyername
       t.string :cardtype
       t.string :cardnum
       t.string :amount
       t.string :expiration
+      t.text   :comments
 
       t.timestamps
     end

@@ -39,6 +39,6 @@ class WelcomeController < ApplicationController
   end  
 
   def index
-    @user = User.new(params[:id])
-  end
+    @user = User.new(params[:user])
+  end 
 end

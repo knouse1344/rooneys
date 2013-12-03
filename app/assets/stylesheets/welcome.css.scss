@@ -421,31 +421,53 @@
 #giftcards {
 
 	h1 {
+		font-family: 'Open Sans', sans-serif;
 		margin:0 0 40px 0;
 		padding: 0;
+		text-align: center;
+	}
+
+	h3 {
+		text-align: center;
+		font-family: 'Open Sans', sans-serif;
 	}
 
 	.container {
-		width: 450px;
-		padding-left: 60px;
+		width: 900px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.input {
 		font-size: 1.2em;
 	}
 
-	#signup {
-		margin-top: 0;
-		width: 400px;
-		margin-left: auto;
-		margin-right: auto;
+	.box {
 		font-family: 'Open Sans', sans-serif;
+		width: 400px;
+		margin-left: 33px;
+		display: inline-block;
+		vertical-align: top;
+	}
 
-		.submitbtn {
-			width: 200px;
-			padding: 10px;
-			font-size: 14px;
-		}
+	.submitbtn {
+		margin-left: 75px;
+		width: 250px;
+		margin-top: 50px;
+		padding: 7px;
+		font-size: 1.25em;
+		cursor: pointer;
+		color: #fff;
+		border: 1px solid #666;
+		background-color: #7D0F0F; /* Old browsers */
+	    -moz-transition:background-color .25s ease-in-out;
+	    -webkit-transition:background-color .25s ease-in-out;
+	    -o-transition:background-color .25s ease-in-out;
+	    transition:background-color .25s ease-in-out;
+	}
+
+	.submitbtn:hover {
+		background-color: #964D4D; /* Old browsers */
 	}
 
 	input, textarea, select, .uneditable-input {

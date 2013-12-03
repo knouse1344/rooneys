@@ -6,7 +6,7 @@ class UsersController < InheritedResources::Base
  
     respond_to do |format|
       if @user.save 
-        format.html { redirect_to(@user, notice: 'You were successfully added to the mailing list!') }
+        format.html { redirect_to('/welcome/index', notice: 'You were successfully added to the mailing list!') }
         format.json { render json: @user, status: :created, location: @user }
       else
         format.html { render action: 'new' }
