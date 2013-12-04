@@ -16,6 +16,10 @@ class WelcomeController < ApplicationController
     
   end
 
+  def contact
+    @message = Contact.new(params[:contact])
+  end
+
   def wine
     @wine1 = Winesection.find(1)
     @onewines = @wine1.wineitems.sort!
@@ -39,6 +43,6 @@ class WelcomeController < ApplicationController
   end  
 
   def index
-    @user = User.new(params[:user])
+    @user1 = User.new(params[:user])
   end 
 end

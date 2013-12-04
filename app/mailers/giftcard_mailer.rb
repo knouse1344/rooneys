@@ -4,6 +4,6 @@ class GiftcardMailer < ActionMailer::Base
   def welcome_email(gift)
   	@gift2 = gift
     mail :to => @gift2.email, 
-    	 :subject => 'Welcome to My Awesome Site'
+    	 :subject => 'A gift card was purchased'
   end
 end

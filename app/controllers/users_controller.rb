@@ -2,15 +2,17 @@ class UsersController < InheritedResources::Base
   # POST /users
   # POST /users.json
   def create
-    @user = User.new(params[:user])
- 
+    @user1 = User.new(params[:user])
+    
+    UserMailer.news_email(@user1).deliver
+
     respond_to do |format|
-      if @user.save 
-        format.html { redirect_to('/welcome/index', notice: 'You were successfully added to the mailing list!') }
-        format.json { render json: @user, status: :created, location: @user }
+      if @user1.save 
+        format.html { redirect_to('/welcome/index') }
+        format.json { render json: @user1, status: :created, location: @user1 }
       else
         format.html { render action: 'new' }
-        format.json { render json: @user.errors, status: :unprocessable_entity }
+        format.json { render json: @user1.errors, status: :unprocessable_entity }
       end
     end
   end

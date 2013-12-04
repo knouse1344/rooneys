@@ -25,10 +25,29 @@
 
 		<div class="bottom_box">
 			</br></br>
-			<span style="font-size: 1.25em; font-weight: bold;"> Questions/Concerns? </span> Email us with any inquiries directly at 
-			<a href="mailto:rooneys..." target="blank">rooneys@....</a>
+			<span style="font-size: 1.25em; font-weight: bold;"> Questions/Concerns? </span> Email us with any inquiries directly using the form below! 
 		</div>
 
+		<div id="contform">
+		    <%= form_for(@message) do |f| %>
+	              <div class="field">
+	              	<div class="item">
+		                <%= f.label :email, "Enter your email address:", class: "label" %><br>
+		                <%= f.text_field :email, class: "contactinput" %><br><br>
+
+		                <%= f.label :subject, "Email Subject:", class: "label" %><br>
+		                <%= f.text_field :subject, class: "contactinput" %>
+		            </div>
+		            <div class="textitem">
+		                <%= f.label :body, "Message contents:", class: "label" %><br>
+		                <%= f.text_area :body, class: "contacttext" %>
+		            </div>
+	              </div>
+	              <div class="actions">
+	                <%= f.submit "Send Message", class: "contsubmit" %>
+	              </div>
+	        <% end %>
+	    </div>
 	</div>
 
 	<div id="content_bot"> </div>
