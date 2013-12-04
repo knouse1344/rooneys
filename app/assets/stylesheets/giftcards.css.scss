@@ -2,3 +2,28 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+#error_explanation {
+	margin-top: 40px;
+	margin-left: 45px;
+	width: 350px;
+
+	.alert {
+		color: #913F3F;
+		background: #FFD6D6;
+		border: 1px solid #DE8787;
+		border-radius: 4px;
+		text-align: center;
+		padding: 6px 0 6px 0;
+		opacity: .75;
+	}
+
+	ul {
+		list-style-type: none;
+	
+		li {
+			padding-left: 40px;
+			color: #FF6E6E;
+		}
+	}
+}

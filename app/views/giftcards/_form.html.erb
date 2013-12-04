@@ -1,16 +1,5 @@
 
   <%= form_for(@gift) do |f| %>
-  <!--     <% if @gift.errors.any? %>
-        <div id="error_explanation">
-          <h2><%= pluralize(@gift.errors.count, "error") %> prohibited this gift card from being saved:</h2>
-
-          <ul>
-          <% @gift.errors.full_messages.each do |msg| %>
-            <li><%= msg %></li>
-          <% end %>
-          </ul>
-        </div>
-      <% end %> -->
 
     <div class="box">
       <h3> Where should we send this gift card? </h3>
@@ -21,41 +10,37 @@
       <%= f.label :address, "Address" %>
       <%= f.text_field :address, class: "input"  %>
 
-      <%= f.label :city, "City" %>
-      <%= f.text_field :city, class: "input"  %>
+      <%= f.label :city, "City" %> <%= f.label :state, "State", class: "rightlabel" %><br>
+      <%= f.text_field :city, class: "inputhalf"  %>      
+      <%= f.text_field :state, class: "inputrighthalf"  %><br>
 
-      <%= f.label :state, "State" %>
-      <%= f.text_field :state, class: "input"  %>
+      <%= f.label :zip, "Zip Code" %><br>
+      <%= f.text_field :zip, class: "inputhalf"  %>
 
-      <%= f.label :zip, "Zip Code" %>
-      <%= f.text_field :zip, class: "input"  %>
+      <%= render 'shared/error_messages' %>
     </div>
     <div class="box">
       <h3> Buyer </h3>
 
-      <%= f.label :buyername, "Buyer Name" %>
-      <%= f.text_field :buyername, class: "input"  %>
-
-      <%= f.label :email, "Email Address" %>
-      <%= f.text_field :email, class: "input"  %>
+      <%= f.label :buyername, "Buyer Name" %><%= f.label :email, "Email Address", :placeholder => "john@example.com", class: "rightlabel" %><br>
+      <%= f.text_field :buyername, class: "inputhalf"  %>
+      <%= f.text_field :email, class: "inputrighthalf"  %>
 
       <%= f.label :phone, "Phone Number" %>
       <%= f.text_field :phone, class: "input"  %>
 
       <%= f.label :cardtype, "Card Type" %>
-      <%= f.text_field :cardtype, class: "input"  %>
+      <%= f.text_field :cardtype, :placeholder => "Visa, Mastercard, Discover", class: "input"  %>
 
       <%= f.label :cardnum, "Card Number" %>
       <%= f.text_field :cardnum, class: "input"  %>
 
-      <%= f.label :amount, "Gift Card Amount" %>
-      <%= f.text_field :amount, class: "input"  %>
-
-      <%= f.label :expiration, "Expiration Date" %>
-      <%= f.text_field :expiration, class: "input"  %>
+      <%= f.label :expiration, "Expiration Date" %><%= f.label :amount, "Gift Card Amount", class: "rightlabel" %>
+      <%= f.text_field :expiration, class: "inputhalf"  %>      
+      <%= f.text_field :amount, class: "inputrighthalf"  %>
 
       <%= f.label :comments, "Comments/Instructions" %>
-      <%= f.text_area :comments, class: "input"  %>
+      <%= f.text_area :comments, :placeholder => "Would you like us to handle your order in a specific way?", class: "inputcomment"  %>
     
       <%= f.submit "Purchase", class: "submitbtn" %>
     </div>
