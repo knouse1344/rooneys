@@ -20,6 +20,7 @@ Winesection.create([{name: 'Dessert Wines', id: '6'}])
 Dinnersection.create([{name: 'Featured Appetizers', id: '5'}])
 Dinnersection.create([{name: 'Salads', id: '6'}])
 Dinnersection.create([{name: 'House Specialties', id: '7'}])
+Dinnersection.create([{name: "Rooney's Dessert Menu $8", id: '8'}])
 
 
 Wineitem.create([{name: 'Beaune du Château, Bouchard Père et Fils, "Premier Cru"', price: '68', desc: 'Burgundy, 2009', winesection_id: '1'},
@@ -143,4 +144,11 @@ Dinneritem.create([{name: 'Tortellini Soup', price: '6', desc: 'Andouille sausag
 			{name: 'Wood Girlled Pork Tenderloin', price: '23', desc: 'Apple barbecue sauce and risotto.', dinnersection_id: '7'},
 			{name: 'Roasted Half Duck', price: '24', desc: 'Caramelized orange sauce and long grain wild rice.', dinnersection_id: '7'},
 			{name: 'House Made Lobster and Crab Ravioli', price: '23', desc: 'Spinach, roasted red peppers and goat cheese.', dinnersection_id: '7'},
-			{name: 'Tuscan Chicken', price: '19', desc: 'Stuffed with Italian sausage and simmered in Chianti with tomatoes and pancetta.', dinnersection_id: '7'}])
+			{name: 'Tuscan Chicken', price: '19', desc: 'Stuffed with Italian sausage and simmered in Chianti with tomatoes and pancetta.', dinnersection_id: '7'},
+			{name: 'Daily Cheese Cake', price: '', desc: '', dinnersection_id: '8'},
+			{name: 'Fresh Made Apple Dumpling with Almond Cream & Craisins', price: '', desc: '', dinnersection_id: '8'},
+			{name: 'House Made Vanilla & Daily Ice Cream', price: '', desc: '', dinnersection_id: '8'},
+			{name: 'House Made Coconut & Daily Sorbet', price: '', desc: '', dinnersection_id: '8'},
+			{name: 'Flourless Chocolate Oblivion', price: '', desc: '', dinnersection_id: '8'},
+			{name: 'Vanilla Bean Creme Brulee', price: '', desc: '', dinnersection_id: '8'},
+			{name: 'Eggless Chocolate Almond Mousse', price: '', desc: '', dinnersection_id: '8'}])
