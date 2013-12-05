@@ -99,18 +99,17 @@ Wineitem.create([{name: 'Beaune du Château, Bouchard Père et Fils, "Premier Cr
 			{name: 'Beringer "Private Reserve" Chardonnay', price: '65', desc: 'Napa Valley, 2011 [Wine Spectator 93 pts]', winesection_id: '4'},
 			{name: 'Patz & Hall Chardonnay', price: '70', desc: 'Dutton Ranch, Russian River Valley, 2010 [Wine Advocate 91 pts]', winesection_id: '4'},
 			{name: 'Antica Chardonnay', price: '58', desc: 'Napa Valley, Antinori Family Estate, 2011 [Wine Advocate 92 pts]', winesection_id: '4'},
-			{name: 'NV Korbel Brut', price: '6', desc: 'California', winesection_id: '5'},
-			{name: 'NV Bouvet Signature Brut', price: '30', desc: 'France', winesection_id: '5'},
-			{name: 'NV Perrier Jouet, Grand Brut', price: '42', desc: ' ', winesection_id: '5'},
-			{name: 'NV Cinzano Asti Spumante', price: '26', desc: 'Italy', winesection_id: '5'},
-			{name: 'NV Taittinger Brut "La Francaise" (1/2 btl)', price: '38', desc: 'France', winesection_id: '5'},
-			{name: 'NV Vueve Cliquot "Yellow Label" Brut (1/2 btl)', price: '36', desc: 'France', winesection_id: '5'},
-			{name: 'NV Vueve Cliquot "Yellow Label" Brut', price: '68', desc: 'France', winesection_id: '5'},
-			{name: 'NV Moet & Chandon "White Star" (1/2 btl)', price: '32', desc: 'France', winesection_id: '5'},
-			{name: 'NV Moet & Chandon "White Star"', price: '58', desc: 'France', winesection_id: '5'},
-			{name: '1996 Perrie Jouet "Fleur de Champagne', price: '125', desc: '', winesection_id: '5'},
-			{name: '1995 Taittinger Blanc de Blancs', price: '185', desc: 'France', winesection_id: '5'},
-			{name: '1995 Taittinger Blanc de Blancs', price: '185', desc: 'France', winesection_id: '6'}])
+			{name: 'Freixenet Brut Cava, Blanc de Blancs', price: '7', desc: 'Spain', winesection_id: '5'},
+			{name: 'Segura Viudas, Brut Reserva', price: '32', desc: 'Spain', winesection_id: '5'},
+			{name: 'Chandon, Brut Classic', price: '45', desc: 'Napa Valley, Domaine Chandon', winesection_id: '5'},
+			{name: 'Chandon, Brut Classic, (1/2 btl)', price: '26', desc: 'Napa Valley, Domaine Chandon', winesection_id: '5'},
+			{name: 'Vueve Cliqout "Yellow Label" Brut (1/2 btl)', price: '49', desc: 'France', winesection_id: '5'},
+			{name: 'Vueve Cliqout "Yellow Label" Brut', price: '90', desc: 'France', winesection_id: '5'},
+			{name: 'Moet & Chandon "Impérial" (1/2 btl)', price: '45', desc: 'France', winesection_id: '5'},
+			{name: 'Moet & Chandon "Impérial"', price: '80', desc: 'France', winesection_id: '5'},
+			{name: 'Perrier-Jouët Fleur de Champagne “Belle Epoque” Brut', price: '199', desc: 'France', winesection_id: '5'},
+			{name: 'Chateau Petit Védrines', price: '35', desc: 'Sauternes', winesection_id: '6'},
+			{name: 'Chateau Doisy-Védrines "Grand Cru Classé"', price: '50', desc: 'Sauternes', winesection_id: '6'}])
 
 
 
