@@ -29,6 +29,10 @@ class WelcomeController < ApplicationController
     @threewines = @wine3.wineitems.sort!
     @wine4 = Winesection.find(4)
     @fourwines = @wine4.wineitems.sort!
+    @wine5 = Winesection.find(5)
+    @fivewines = @wine5.wineitems.sort!
+    @wine6 = Winesection.find(6)
+    @sixwines = @wine6.wineitems.sort!
   end
 
   def dessert

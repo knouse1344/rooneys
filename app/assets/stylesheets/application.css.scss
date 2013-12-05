@@ -152,6 +152,18 @@ body {
 			display: table-cell;
 			text-align: center;
 			font-size: .9em;
+
+			img {
+				opacity: .5;
+				-moz-transition:opacity .25s ease-in-out;
+			    -webkit-transition:opacity .25s ease-in-out;
+			    -o-transition:opacity .25s ease-in-out;
+			    transition:opacity .25s ease-in-out;
+			}
+
+			img:hover {
+				opacity: 1;
+			}
 		}
 
 		.contact {
