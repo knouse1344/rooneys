@@ -2,6 +2,7 @@ class GiftcardsController < ApplicationController
   # POST /gifts
   # POST /gifts.json
   def index
+    redirect_to('/welcome/index')
   end
 
   def show

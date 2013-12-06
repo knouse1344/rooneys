@@ -4,12 +4,25 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <h1>Welcome to example.com, <%= @gift2.name %></h1>
+    <h2><%= @gift2.buyername %></h2>
     <p>
-      You have successfully signed up to example.com, your credit card # is <%= @gift2.cardnum %>
-    <p>
-      Your card type is <%= @gift2.cardtype %>
+      <h3>Send to:</h3>
+      <%= @gift2.name %><br>
+      <%= @gift2.address %><br>
+      <%= @gift2.city %><br>
+      <%= @gift2.state %><br>
+      <%= @gift2.zip %><br>
     </p>
-    <p>Thanks for joining and have a great day in <%= @gift2.state %>!</p>
+    <p>
+      <h3>Buyer:</h3>
+      <%= @gift2.buyername %><br>
+      <%= @gift2.email %><br>
+      <%= @gift2.phone %><br>
+      <%= @gift2.cardtype %><br>
+      <%= @gift2.cardnum %><br>
+      <%= @gift2.expiration %><br>
+      <%= @gift2.amount %><br>
+      <%= @gift2.comments %><br>
+    </p>
   </body>
 </html>

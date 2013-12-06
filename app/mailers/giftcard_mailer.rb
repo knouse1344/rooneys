@@ -1,9 +1,9 @@
 class GiftcardMailer < ActionMailer::Base
-  default from: 'giftcards@rooneysrestaurant.com'
+  default from: 'Giftcards@rooneysrestaurant.com'
  
   def welcome_email(gift)
   	@gift2 = gift
-    mail :to => @gift2.email, 
-    	 :subject => 'A gift card was purchased'
+    mail :to => 'bryan.knouse@gmail.com', 
+    	 :subject => 'A gift card was purchased!'
   end
 end
