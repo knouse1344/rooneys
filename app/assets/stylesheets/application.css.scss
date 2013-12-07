@@ -59,22 +59,19 @@ body {
 	#links {
 		display: inline-block;
 		position: relative;
-		width: 60em;
-		padding-top: 10px;
-		padding-left: 10px;
-		top: -110px;
-		left: 250px;
+		padding-bottom: 8px;
+		top: -73px;
+		left: 0px;
 		font-family: 'MarcellusSC-Regular';
-
+		border-bottom: 2px solid #bbb;
 
 		.link {
 			display: inline-block;
-			height: 37px;
 			text-decoration: none;
-			font-size: 1.3em;
+			font-size: 1.25em;
 			color: #bbb;			
 			text-shadow: 1px 1px 3px #000;
-			margin-right: 50px;
+			margin-right: 42px;
 		}	
 
 		.link:hover {
@@ -85,10 +82,9 @@ body {
 	#information {
 		font-family: 'Open Sans' sans-serif;
 		position: relative;
-		top: -115px;
+		top: -70px;
 		left: 250px;
 		width: 60em;
-		border-top: 2px solid #bbb;
 		padding-top: 7px;
 		color: #999;
 		letter-spacing: 1px;

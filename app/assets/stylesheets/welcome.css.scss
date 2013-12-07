@@ -11,11 +11,11 @@
 }
 
 #slider_bg {
-	background: url('/assets/slider.png') no-repeat;
-	width: 1096px;
-	height: 584px;
+	background: url('/assets/slider_bg.jpg') no-repeat;
+	width: 1078px;
+	height: 564px;
 	position: relative;
-	margin-top: -525px;
+	margin-top: -515px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -25,7 +25,6 @@
 	width: 1077px;
 	height: 181px;
 	margin-left: auto;
-	padding: 0 2px 0 7px;
 	margin-right: auto;
 	margin-top: 40px;
 
@@ -357,9 +356,8 @@
 #events {
 
 	h1 {
-		text-align: center;
 		margin:0 0 40px 0;
-		padding: 0;
+		text-align: center;
 	}
 
 	#description {
@@ -372,7 +370,8 @@
 		margin-right: auto;
 
 		p {
-			margin: 0;
+			margin-bottom: 0px;
+			padding-bottom: 40px;
 		}
 	}
 }

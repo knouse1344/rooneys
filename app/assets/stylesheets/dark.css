@@ -21,7 +21,7 @@ Supports Thumbs: true
 	position:relative;
 	background:#fff url(loading.gif) no-repeat 50% 50%;
     bottom: 15px;
-    left: 8px;
+    left: 5px;
     overflow: visible;
     box-shadow: 5px 5px 15px #000;
 }
