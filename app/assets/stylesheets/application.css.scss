@@ -62,7 +62,7 @@ body {
 		width: 60em;
 		padding-top: 10px;
 		padding-left: 10px;
-		top: -90px;
+		top: -110px;
 		left: 250px;
 		font-family: 'MarcellusSC-Regular';
 
@@ -72,13 +72,30 @@ body {
 			height: 37px;
 			text-decoration: none;
 			font-size: 1.3em;
-			color: #bbb;
+			color: #bbb;			
 			text-shadow: 1px 1px 3px #000;
 			margin-right: 50px;
 		}	
 
 		.link:hover {
 			color: #dadada;
+		}
+	}
+
+	#information {
+		font-family: 'Open Sans' sans-serif;
+		position: relative;
+		top: -115px;
+		left: 250px;
+		width: 60em;
+		border-top: 2px solid #bbb;
+		padding-top: 7px;
+		color: #999;
+		letter-spacing: 1px;
+		text-align: center;
+
+		.info {
+			display: inline-block;
 		}
 	}
 }

@@ -2,7 +2,7 @@
   <%= form_for(@gift) do |f| %>
 
     <div class="box">
-      <h3> Where should we send this gift card? </h3>
+      <h3> Recipient </h3>
 
       <%= f.label :name, "Recipient Name" %>
       <%= f.text_field :name, class: "input" %>
@@ -17,6 +17,9 @@
       <%= f.label :zip, "Zip Code" %><br>
       <%= f.text_field :zip, class: "inputhalf"  %>
 
+      <div class="notice">
+          * If you are the recipient of this gift card, please input your information under "recipient" and "buyer" as instructed.
+      </div>
       <%= render 'shared/error_messages' %>
     </div>
     <div class="box">

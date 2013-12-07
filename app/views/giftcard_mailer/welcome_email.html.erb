@@ -4,25 +4,24 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <h2><%= @gift2.buyername %></h2>
     <p>
-      <h3>Send to:</h3>
-      <%= @gift2.name %><br>
-      <%= @gift2.address %><br>
-      <%= @gift2.city %><br>
-      <%= @gift2.state %><br>
-      <%= @gift2.zip %><br>
+      <h3>Send to: </h3>
+      <strong>Name: </strong><%= @gift2.name %><br>
+      <strong>Address: </strong><%= @gift2.address %><br>
+      <strong>City: </strong><%= @gift2.city %><br>
+      <strong>State: </strong><%= @gift2.state %><br>
+      <strong>Zip: </strong><%= @gift2.zip %><br>
     </p>
     <p>
       <h3>Buyer:</h3>
-      <%= @gift2.buyername %><br>
-      <%= @gift2.email %><br>
-      <%= @gift2.phone %><br>
-      <%= @gift2.cardtype %><br>
-      <%= @gift2.cardnum %><br>
-      <%= @gift2.expiration %><br>
-      <%= @gift2.amount %><br>
-      <%= @gift2.comments %><br>
+      <strong>Buyer Name: </strong><%= @gift2.buyername %><br>
+      <strong>Email Address: </strong><%= @gift2.email %><br>
+      <strong>Phone: </strong><%= @gift2.phone %><br>
+      <strong>Card Type: </strong><%= @gift2.cardtype %><br>
+      <strong>Card Number: </strong><%= @gift2.cardnum %><br>
+      <strong>Expiration Date: </strong><%= @gift2.expiration %><br>
+      <strong>Gift Amount: </strong><%= @gift2.amount %><br>
+      <strong>Comments/Instructions: </strong><%= @gift2.comments %><br>
     </p>
   </body>
 </html>
