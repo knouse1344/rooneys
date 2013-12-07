@@ -63,32 +63,34 @@ body {
 		top: -73px;
 		left: 0px;
 		font-family: 'MarcellusSC-Regular';
-		border-bottom: 2px solid #bbb;
+		border-bottom: 2px solid #E0B277;
 
 		.link {
 			display: inline-block;
 			text-decoration: none;
-			font-size: 1.25em;
-			color: #bbb;			
+			font-size: 1.1em;
+			color: #E0B277;			
 			text-shadow: 1px 1px 3px #000;
-			margin-right: 42px;
+			margin-right: 33px;
 		}	
 
 		.link:hover {
-			color: #dadada;
+			color: #F1DDC4;
 		}
 	}
 
 	#information {
 		font-family: 'Open Sans' sans-serif;
+		font-size: .95em;
 		position: relative;
 		top: -70px;
 		left: 250px;
 		width: 60em;
 		padding-top: 7px;
-		color: #999;
+		color: #C99C63;
 		letter-spacing: 1px;
 		text-align: center;
+		text-shadow: 1px 1px 1px #444;
 
 		.info {
 			display: inline-block;

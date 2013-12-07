@@ -27,6 +27,7 @@ Rooneys::Application.routes.draw do
   get 'welcome/dinner'
   get 'welcome/wine'
   get 'welcome/dessert'
+  get 'welcome/private'
 
 
   
