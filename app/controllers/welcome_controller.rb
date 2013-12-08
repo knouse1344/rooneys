@@ -12,8 +12,9 @@ class WelcomeController < ApplicationController
   def main
   end
 
-  def events
-    
+  def event
+    @event = Event.find(1)
+    @edesc = Event.find(1).description    
   end
 
   def contact
@@ -33,6 +34,11 @@ class WelcomeController < ApplicationController
     @fivewines = @wine5.wineitems.sort!
     @wine6 = Winesection.find(6)           # Dessert Wines
     @sixwines = @wine6.wineitems.sort!
+  end
+
+  def private
+    @private = Private.find(1)
+    @pdesc = Private.find(1).description
   end
 
   def dessert

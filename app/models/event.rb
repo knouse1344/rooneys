@@ -1,3 +1,3 @@
 class Event < ActiveRecord::Base
-	attr_accessible :title, :description
+	attr_accessible :title, :description, :event_id
 end

@@ -22,6 +22,9 @@ Dinnersection.create([{name: 'Salads', id: '6'}])
 Dinnersection.create([{name: 'House Specialties', id: '7'}])
 Dinnersection.create([{name: "Rooney's Dessert Menu $8", id: '8'}])
 
+Event.create([{title: "French Week at Rooney's", description: "Per popular demand we invited our French Guest Chef from Lyon France for the seventh consecutive year.  He comes bearing the extraordinary tastes and textures, the astonishing aromas of traditional Lyonnais Specialties.  This is truly a unique and exciting event. For more information or to make reservations please call (585) 442-0444", id: '1'}])
+
+Private.create([{title: "We Would Love To Host Your Private Event", description: "At Rooney's Restaurant we are more than happy to accomodate your private party.  Please contact us to discuss your needs.", id: '1'}])
 
 Wineitem.create([{name: 'Beaune du Château, Bouchard Père et Fils, "Premier Cru"', price: '68', desc: 'Burgundy, 2009', winesection_id: '1'},
 			{name: 'Domaine Raphaël Dubois, Nuits-Saint-Georges', price: '72', desc: 'Burgundy, 2009', winesection_id: '1'},

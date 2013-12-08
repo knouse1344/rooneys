@@ -3,6 +3,8 @@ Rooneys::Application.routes.draw do
   resources :giftcards
   resources :users
   resources :contacts
+  resources :events
+  resources :privates
   
   get "giftcards/index"
 
@@ -22,11 +24,11 @@ Rooneys::Application.routes.draw do
   get 'welcome/menus'
   get 'welcome/about'
   get 'welcome/contact'
-  get 'welcome/events'
   get 'welcome/reserve'
   get 'welcome/dinner'
   get 'welcome/wine'
   get 'welcome/dessert'
+  get 'welcome/event'
   get 'welcome/private'
 
 
