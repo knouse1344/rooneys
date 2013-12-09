@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131208181918) do
+ActiveRecord::Schema.define(version: 20131209162405) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -59,7 +59,6 @@ ActiveRecord::Schema.define(version: 20131208181918) do
     t.string   "name"
     t.string   "price"
     t.integer  "dinnersection_id"
-    t.string   "dinnersection"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -97,6 +96,14 @@ ActiveRecord::Schema.define(version: 20131208181918) do
     t.datetime "updated_at"
   end
 
+  create_table "hours", force: true do |t|
+    t.string   "monfri"
+    t.string   "saturday"
+    t.string   "sunday"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "privates", force: true do |t|
     t.string   "title"
     t.text     "description"
@@ -116,13 +123,11 @@ ActiveRecord::Schema.define(version: 20131208181918) do
     t.string   "name"
     t.string   "price"
     t.integer  "winesection_id"
-    t.string   "winesection"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "winesections", force: true do |t|
-    t.string   "identity"
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"

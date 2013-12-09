@@ -13,8 +13,7 @@ class WelcomeController < ApplicationController
   end
 
   def event
-    @event = Event.find(1)
-    @edesc = Event.find(1).description    
+    @event = Event.all
   end
 
   def contact
@@ -37,8 +36,7 @@ class WelcomeController < ApplicationController
   end
 
   def private
-    @private = Private.find(1)
-    @pdesc = Private.find(1).description
+    @private = Private.all
   end
 
   def dessert
@@ -48,5 +46,6 @@ class WelcomeController < ApplicationController
 
   def index
     @user1 = User.new(params[:user])
+    @hours = Hour.find(1)
   end 
 end

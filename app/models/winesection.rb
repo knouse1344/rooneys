@@ -1,4 +1,4 @@
 class Winesection < ActiveRecord::Base
-  attr_accessible :id, :identity, :name
+  attr_accessible :id, :name
   has_many :wineitems
 end

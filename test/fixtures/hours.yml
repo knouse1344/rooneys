@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  monfri: MyString
+  saturday: MyString
+  sunday: MyString
+
+two:
+  monfri: MyString
+  saturday: MyString
+  sunday: MyString

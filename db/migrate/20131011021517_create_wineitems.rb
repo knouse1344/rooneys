@@ -5,7 +5,6 @@ class CreateWineitems < ActiveRecord::Migration
       t.string :name
       t.string :price
       t.integer :winesection_id
-      t.string :winesection
 
       t.timestamps
     end

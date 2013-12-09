@@ -1,5 +1,5 @@
 ActiveAdmin.register AdminUser do
-    menu :priority => 8
+    menu :priority => 9
 
   index do
     column :email

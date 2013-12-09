@@ -3,7 +3,6 @@ ActiveAdmin.register Dinneritem, :as => 'Dinner Items' do
 	config.sort_order = "id_asc"
 
 	index do
-		column :dinnersection
 		column :name
 		column "Description", :desc
 		column :price do |item|
