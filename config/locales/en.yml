@@ -12,3 +12,5 @@ en:
         cardnum: "Credit card number"
         amount: "Gift card amount"
         expiration: "Expiration date"
+      hour:
+        monfri: "Monday - Friday"

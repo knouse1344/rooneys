@@ -64,7 +64,6 @@ ActiveRecord::Schema.define(version: 20131209162405) do
   end
 
   create_table "dinnersections", force: true do |t|
-    t.string   "identity"
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"

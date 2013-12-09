@@ -29,15 +29,15 @@
       <%= f.text_field :buyername, class: "inputhalf"  %>
       <%= f.text_field :email, class: "inputrighthalf"  %>
 
-      <%= f.label :phone, "Phone Number" %><%= f.label :cardtype, "Card Type", class: "rightlabel" %>
-      <%= f.text_field :phone, class: "inputhalf"  %>
-      <%= f.select(:cardtype,  options_for_select([['Visa'],['Mastercard'],['Discover'],['American Express']])) %>
+      <%= f.label :phone, "Phone Number" %><%= f.label :cardtype, "Card Type", class: "rightlabel2" %>
+      <%= f.text_field :phone, class: "inputhalfphone"  %>
+      <%= f.select(:cardtype,  options_for_select([['Visa'],['Mastercard'],['Discover'],['American Express']]), {}, {:style => "width: 205px;"}) %>
       <br>
       <%= f.label :cardnum, "Card Number" %>
       <%= f.text_field :cardnum, class: "input"  %>
 
       <%= f.label :expiration, "Expiration Date" %><%= f.label :amount, "Gift Card Amount", class: "rightlabel" %>
-      <%= f.text_field :expiration, class: "inputhalf"  %>      
+      <%= f.text_field :expiration, :placeholder => "MM/DD/YYYY", class: "inputhalf"  %>      
       <%= f.text_field :amount, class: "inputrighthalf"  %>
 
       <%= f.label :comments, "Comments/Instructions" %>
