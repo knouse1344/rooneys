@@ -29,12 +29,10 @@
       <%= f.text_field :buyername, class: "inputhalf"  %>
       <%= f.text_field :email, class: "inputrighthalf"  %>
 
-      <%= f.label :phone, "Phone Number" %>
-      <%= f.text_field :phone, class: "input"  %>
-
-      <%= f.label :cardtype, "Card Type" %>
-      <%= f.text_field :cardtype, :placeholder => "Visa, Mastercard, Discover", class: "input"  %>
-
+      <%= f.label :phone, "Phone Number" %><%= f.label :cardtype, "Card Type", class: "rightlabel" %>
+      <%= f.text_field :phone, class: "inputhalf"  %>
+      <%= f.select(:cardtype,  options_for_select([['Visa'],['Mastercard'],['Discover'],['American Express']])) %>
+      <br>
       <%= f.label :cardnum, "Card Number" %>
       <%= f.text_field :cardnum, class: "input"  %>
 

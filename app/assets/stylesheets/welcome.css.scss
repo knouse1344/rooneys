@@ -187,6 +187,17 @@
 	z-index: 5;	
 }
 
+.private_banner {
+	background: url('/assets/private_header.png') no-repeat;
+	width: 1056px;
+	height: 71px;
+	position: relative;
+	top: -14px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 5;	
+}
+
 .reservation_banner {
 	background: url('/assets/reservation_header.png') no-repeat;
 	width: 1056px;
@@ -521,6 +532,10 @@
 		padding-left: 10px;
 		width: 195px;
 		display: inline-block;
+	}
+	
+	.inputdropdown {
+		margin-left: 40px;
 	}
 	
 	.inputrighthalf {
