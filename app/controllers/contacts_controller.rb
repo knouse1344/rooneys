@@ -5,6 +5,7 @@ class ContactsController < InheritedResources::Base
     @message = Contact.new(params[:contact])
     
     ContactMailer.contact_email(@message).deliver
+    ContactMailer.contact2_email(@message).deliver
 
     respond_to do |format|
       if @message.save 
