@@ -5,6 +5,7 @@ class UsersController < InheritedResources::Base
     @user1 = User.new(params[:user])
     
     UserMailer.news_email(@user1).deliver
+    UserMailer.news2_email(@user1).deliver
 
     respond_to do |format|
       if @user1.save 
