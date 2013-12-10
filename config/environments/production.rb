@@ -1,7 +1,7 @@
 Rooneys::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
-  config.force_ssl = true
+  config.force_ssl = false
   
   # Add the fonts path
   config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
