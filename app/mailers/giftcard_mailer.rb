@@ -3,7 +3,7 @@ class GiftcardMailer < ActionMailer::Base
  
   def welcome_email(gift)
   	@gift2 = gift
-    mail :to => 'bryan.knouse@gmail.com', 
+    mail :to => 'jsqualli@rochester.rr.com', 
     	 :subject => 'A $'+@gift2.amount+' Gift Card Was Purchased'
   end
 end

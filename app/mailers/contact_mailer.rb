@@ -3,7 +3,7 @@ class ContactMailer < ActionMailer::Base
 
   def contact_email(message)
   	@message = message
-    mail :to => 'bryan.knouse@gmail.com',
+    mail :to => 'jsqualli@rochester.rr.com',
     	 :subject => @message.subject
   end
 end

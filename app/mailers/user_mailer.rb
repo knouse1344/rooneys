@@ -3,7 +3,7 @@ class UserMailer < ActionMailer::Base
 
   def news_email(user)
   	@user1 = user
-    mail :to => 'bryan.knouse@gmail.com', 
+    mail :to => 'jsqualli@rochester.rr.com', 
     	 :subject => 'A new member wants to be added to the newsletter'
   end
 end
