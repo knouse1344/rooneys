@@ -5,6 +5,7 @@ ActiveAdmin.register Hour, :as => 'Open Hours' do
 		column "Monday-Friday", :monfri
 		column :saturday
 		column :sunday
+		column :id
 
 		default_actions
 	end
