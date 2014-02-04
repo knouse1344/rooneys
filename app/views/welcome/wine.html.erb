@@ -1,17 +1,14 @@
 <div id="dinner">
-	<div id="menu_top"> 
-		<div class="wine_banner"> </div>
-	</div>
-
-	<div class="menu_links">
-		<a class="llink" href="/welcome/dinner">Dinner</a>
-		<span> | </span>
-		<a class="mlink" href="/welcome/wine">Wine</a>
-		<span> | </span>
-		<a class="rlink" href="/welcome/dessert">Dessert</a>
-	</div>
+	<div class="wine_banner"> </div>
 
 	<div id="content_mid">
+		<div class="menu_links">
+			<a class="llink" href="/welcome/dinner">Dinner</a>
+			<span> | </span>
+			<a class="mlink" href="/welcome/wine">Wine</a>
+			<span> | </span>
+			<a class="rlink" href="/welcome/dessert">Dessert</a>
+		</div>
 		<div class="container">
 			<h2><%= @wine1.name %></h2>
 			<%= render @onewines %>

@@ -3,40 +3,45 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-@media only screen and (min-width: 1200px) {
-	
+@media only screen and (max-width: 1199px) {
+
 	#indexpage {
 		margin-left: auto;
 		margin-right: auto;
-		width: 85%;
+		width: 80%;
 		margin-top: 40px;
 	}
 
 	#slider_bg {
 		background: url('/assets/slider_bg.jpg') no-repeat;
-		width: 1078px;
-		height: 504px;
-		padding-top: 60px;
+		background-size: contain;
+		background-position: center;
+		max-width: 100%;
+		height: auto;
 		position: relative;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
 	#panel {
-		background: url('/assets/panel_01.png');
-		width: 1104px;
-		height: 216px;
+		background: url('/assets/panel_01.png') no-repeat;
+		background-size: 100%;
+		background-position:top;
+		width: 100%;
+		padding-top: 3em;
+		padding-bottom: 1em;
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 40px;
 
 		.hours {
+			display: inline-block;
 			color: #fff;
+			width: 40%;
 			font-size: 1.1em;
 			line-height: 2em;
 			text-shadow: 1px 1px #000;
-			padding-top: 4em;
-			padding-left: 5%;
+			padding-left: 3em;
 
 			span {
 				border-bottom: 1px dotted;
@@ -45,10 +50,12 @@
 		}
 
 		.newsletteradd {
-			float: right;
-			width: 450px;
-			height: 100px;
-			margin-top: -100px;
+			display: inline-block;
+			vertical-align: top;
+			text-align: right;
+			width: 45%;
+			padding-right: 4%;
+			padding-top: 1em;
 
 			.label {
 				font-family: 'Open Sans', sans-serif;
@@ -58,18 +65,17 @@
 			}
 
 			.input {
+				display: inline-block;
 				padding: 10px;
-				font-size: 1.1em;
-				width: 250px;
+				font-size: 1em;
+				width: 50%;
 				font-family: 'Open Sans', sans-serif;
 				border-radius: 3px;
 				opacity: .8;
 			}
 
 			.submit {
-				margin-top: -45px;
-				float: left;
-				margin-left: 295px;
+				display: inline-block;
 				padding: 10px 25px 10px 25px;
 				font-family: 'Open Sans', sans-serif;
 				font-size: 1.1em;
@@ -90,10 +96,12 @@
 		}
 	}
 
+
 	.about_banner {
 		background: url('/assets/about_header.png') no-repeat;
-		width: 1083px;
-		height: 95px;
+		background-size: 100%;
+		width: 100%;
+		min-height: 45px;
 		position: relative;
 		margin-left: auto;
 		margin-right: auto;
@@ -102,8 +110,9 @@
 
 	.menus_banner {
 		background: url('/assets/menus_header.png') no-repeat;
-		width: 1083px;
-		height: 95px;
+		background-size: 100%;
+		width: 100%;
+		min-height: 45px;
 		position: relative;
 		margin-left: auto;
 		margin-right: auto;
@@ -112,18 +121,20 @@
 
 	.dinner_banner {
 		background: url('/assets/dinner_header.png') no-repeat;
-		width: 1083px;
-		height: 95px;
+		background-size: 100%;
+		width: 100%;
+		min-height: 45px;
 		position: relative;
 		margin-left: auto;
 		margin-right: auto;
-		z-index: 5;	
+		z-index: 5;		
 	}
 
 	.wine_banner {
 		background: url('/assets/wine_header.png') no-repeat;
-		width: 1083px;
-		height: 95px;
+		background-size: 100%;
+		width: 100%;
+		min-height: 45px;
 		position: relative;
 		margin-left: auto;
 		margin-right: auto;
@@ -132,8 +143,9 @@
 
 	.dessert_banner {
 		background: url('/assets/dessert_header.png') no-repeat;
-		width: 1083px;
-		height: 95px;
+		background-size: 100%;
+		width: 100%;
+		min-height: 45px;
 		position: relative;
 		margin-left: auto;
 		margin-right: auto;
@@ -142,8 +154,9 @@
 
 	.gifts_banner {
 		background: url('/assets/gifts_header.png') no-repeat;
-		width: 1083px;
-		height: 95px;
+		background-size: 100%;
+		width: 100%;
+		min-height: 45px;
 		position: relative;
 		margin-left: auto;
 		margin-right: auto;
@@ -152,8 +165,9 @@
 
 	.events_banner {
 		background: url('/assets/events_header.png') no-repeat;
-		width: 1083px;
-		height: 95px;
+		background-size: 100%;
+		width: 100%;
+		min-height: 45px;
 		position: relative;
 		margin-left: auto;
 		margin-right: auto;
@@ -162,8 +176,9 @@
 
 	.private_banner {
 		background: url('/assets/private_header.png') no-repeat;
-		width: 1083px;
-		height: 95px;
+		background-size: 100%;
+		width: 100%;
+		min-height: 45px;
 		position: relative;
 		margin-left: auto;
 		margin-right: auto;
@@ -172,8 +187,9 @@
 
 	.reservation_banner {
 		background: url('/assets/reservation_header.png') no-repeat;
-		width: 1083px;
-		height: 95px;
+		background-size: 100%;
+		width: 100%;
+		min-height: 45px;
 		position: relative;
 		margin-left: auto;
 		margin-right: auto;
@@ -182,8 +198,9 @@
 
 	.contact_banner {
 		background: url('/assets/contact_header.png') no-repeat;
-		width: 1083px;
-		height: 95px;
+		background-size: 100%;
+		width: 100%;
+		min-height: 45px;
 		position: relative;
 		margin-left: auto;
 		margin-right: auto;
@@ -191,9 +208,11 @@
 	}
 
 	#menu_top {
-		width: 1083px;
-		height: 158px;
+		width: 100%;
+		height: auto;
 		background: url('/assets/content_wood_top.jpg') no-repeat;
+		background-size: cover;
+		background-position: center top;
 	}
 
 	@font-face {
@@ -203,11 +222,17 @@
 	  font-style: normal;
 	}
 
+	#menuspage {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 40px;
+	}
+
 	.menu_links {
-		font-size: 1.75em;
+		font-size: 1.5em;
 		font-family: 'MarcellusSC-Regular';
-		width: 900px;
-		height: 25px;
+		width: 90%;
 		padding-top: 1em;
 		margin-bottom: 0px;
 		margin-left: auto;
@@ -220,40 +245,46 @@
 			text-decoration: none;
 		}
 		.llink {
-			margin-right: 135px;
+			margin-right: 10%;
 		}
 
 		.mlink {
-			margin-left: 135px;
-			margin-right: 135px;
+			margin-left: 10%;
+			margin-right: 10%;
 		}
 
 		.rlink {
-			margin-left: 135px;
+			margin-left: 10%;
 			margin-right: 0px;
 		}
 	}
 
 	#content_mid {
-		width: 1083px;
+		width: 100%;
+		height: auto;
 		color: #fafafa;
 		background: url('/assets/content_wood_mid.jpg') repeat-y;
+		background-position: center;
+		background-size: 100%;
 	}
 
 	#content_bot {
-		width: 1083px;
-		height: 133px;
+		width: 100%;
+		min-height: 25px;
+		height: auto;
 		background: url('/assets/content_wood_bot.jpg') no-repeat;
+		background-position: center;
+		background-size: 100% auto;
 	}
 
 	#dinner {
-		width: 1083px;
+		margin-top: 5%;
+		width: 80%;
 		margin-left: auto;
 		margin-right: auto;
-		padding-top: 40px;
-		
+
 		.container {
-			width: 900px;
+			width: 70%;
 			margin-left: auto;
 			margin-right: auto;
 			padding-top: 60px;
@@ -271,7 +302,7 @@
 	}
 
 	#about {
-		width: 1083px;
+		width: 80%;
 		margin-left: auto;
 		margin-right: auto;
 		padding-top: 40px;
@@ -283,15 +314,15 @@
 		}
 
 		#gallery {
-			width: 900px;
+			width: 80%;
 			margin-left: auto;
 			margin-right: auto;
 
 			.row {
-				width: 850px;
+				width: 100%;
 				margin-left: auto;
 				margin-right: auto;
-				margin-bottom: 40px;
+				margin-bottom: 30px;
 
 				.cent {
 					margin-left: 40px;
@@ -299,19 +330,18 @@
 				}
 
 				img {
-					width: 250px;
+					width: 25%;
 					border: 2px solid #cacaca;
 				}
 
 				.steaksthumb {
-					height: 188px;
-					width: 150px;
+					width: 15%;
 				}
 			}
 		}
 
 		#description {
-			width: 900px;
+			width: 80%;
 			padding-top: 40px;
 			margin-left: auto;
 			margin-right: auto;
@@ -321,13 +351,6 @@
 				margin-bottom: 0;
 			}
 		}
-	}
-
-	#menuspage {
-		width: 1083px;
-		margin-left: auto;
-		margin-right: auto;
-		padding-top: 40px;
 	}
 
 	#reserve {
