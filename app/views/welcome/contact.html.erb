@@ -1,8 +1,6 @@
 <div id="contact">
 
-	<div id="menu_top">
-		<div class="contact_banner"> </div>
-	</div>
+	<div class="contact_banner"> </div>
 
 	<div id="content_mid">
 
@@ -11,7 +9,7 @@
 			<div class="address">90 Henrietta Street</br>Rochester, NY 14620</br>585.442.0444</div>
 
 			<h2> Get Directions </h2>
-			<p style="color:#ddd;width: 250px;margin-top: 5px;">Enter your address below and we will generate directions for you.</p>
+			<p style="color:#ddd;margin-top: 5px;">Enter your address below and we will generate directions for you.</p>
 			<div class="input"> 			
 				<%= form_tag('/maps') do %>
 				  <p>
@@ -21,33 +19,32 @@
 				<% end %>
 			</div>
 		</div>
-		<iframe width="500" height="380" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Rooney's+Restaurant,+90+Henrietta+St,+Rochester,+NY&amp;aq=0&amp;oq=rooney's&amp;sll=43.186182,-77.616399&amp;sspn=0.447587,1.012115&amp;ie=UTF8&amp;hq=Rooney's+Restaurant,&amp;hnear=90+Henrietta+St,+Rochester,+Monroe,+New+York+14620&amp;t=m&amp;cid=14378214792114047071&amp;ll=43.14947,-77.591887&amp;spn=0.023795,0.04283&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Rooney's+Restaurant,+90+Henrietta+St,+Rochester,+NY&amp;aq=0&amp;oq=rooney's&amp;sll=43.186182,-77.616399&amp;sspn=0.447587,1.012115&amp;ie=UTF8&amp;hq=Rooney's+Restaurant,&amp;hnear=90+Henrietta+St,+Rochester,+Monroe,+New+York+14620&amp;t=m&amp;cid=14378214792114047071&amp;ll=43.14947,-77.591887&amp;spn=0.023795,0.04283&amp;z=14&amp;iwloc=A" style="color:#aaa;float:right;margin-top:1em;margin-right: 120px;">View Larger Map</a></small>
+		<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Rooney's+Restaurant,+90+Henrietta+St,+Rochester,+NY&amp;aq=0&amp;oq=rooney's&amp;sll=43.186182,-77.616399&amp;sspn=0.447587,1.012115&amp;ie=UTF8&amp;hq=Rooney's+Restaurant,&amp;hnear=90+Henrietta+St,+Rochester,+Monroe,+New+York+14620&amp;t=m&amp;cid=14378214792114047071&amp;ll=43.14947,-77.591887&amp;spn=0.023795,0.04283&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Rooney's+Restaurant,+90+Henrietta+St,+Rochester,+NY&amp;aq=0&amp;oq=rooney's&amp;sll=43.186182,-77.616399&amp;sspn=0.447587,1.012115&amp;ie=UTF8&amp;hq=Rooney's+Restaurant,&amp;hnear=90+Henrietta+St,+Rochester,+Monroe,+New+York+14620&amp;t=m&amp;cid=14378214792114047071&amp;ll=43.14947,-77.591887&amp;spn=0.023795,0.04283&amp;z=14&amp;iwloc=A" style="color:#aaa;float:right;margin-top:1em;margin-right: 120px;">View Larger Map</a></small>
 
 		<div class="bottom_box">
 			</br></br>
 			<span style="font-size: 1.25em; font-weight: bold;"> Questions/Concerns? </span> Email us with any inquiries directly using the form below! 
+			<div id="contform">
+			    <%= form_for(@message) do |f| %>
+		              <div class="field">
+		              	<div class="item">
+			                <%= f.label :email, "Enter your email address:", class: "label" %><br>
+			                <%= f.text_field :email, class: "contactinput" %><br><br>
+
+			                <%= f.label :subject, "Email Subject:", class: "label" %><br>
+			                <%= f.text_field :subject, class: "contactinput" %></br></br>
+			            </div>
+			            <div class="textitem">
+			                <%= f.label :body, "Message contents:", class: "label" %><br>
+			                <%= f.text_area :body, class: "contacttext" %>
+			            </div>
+		              </div>
+		              <div class="actions">
+		                <%= f.submit "Send Message", class: "contsubmit" %>
+		              </div>
+		        <% end %>
+		    </div>
 		</div>
-
-		<div id="contform">
-		    <%= form_for(@message) do |f| %>
-	              <div class="field">
-	              	<div class="item">
-		                <%= f.label :email, "Enter your email address:", class: "label" %><br>
-		                <%= f.text_field :email, class: "contactinput" %><br><br>
-
-		                <%= f.label :subject, "Email Subject:", class: "label" %><br>
-		                <%= f.text_field :subject, class: "contactinput" %>
-		            </div>
-		            <div class="textitem">
-		                <%= f.label :body, "Message contents:", class: "label" %><br>
-		                <%= f.text_area :body, class: "contacttext" %>
-		            </div>
-	              </div>
-	              <div class="actions">
-	                <%= f.submit "Send Message", class: "contsubmit" %>
-	              </div>
-	        <% end %>
-	    </div>
 	</div>
 
 	<div id="content_bot"> </div>

@@ -22,7 +22,7 @@
       </div>
       <%= render 'shared/error_messages' %>
     </div>
-    <div class="box">
+    <div class="boxr">
       <h3> Buyer </h3>
 
       <%= f.label :buyername, "Buyer Name" %><%= f.label :email, "Email Address", :placeholder => "john@example.com", class: "rightlabel" %><br>
@@ -31,7 +31,7 @@
 
       <%= f.label :phone, "Phone Number" %><%= f.label :cardtype, "Card Type", class: "rightlabel2" %>
       <%= f.text_field :phone, class: "inputhalfphone"  %>
-      <%= f.select(:cardtype,  options_for_select([['Visa'],['Mastercard'],['Discover'],['American Express']]), {}, {:style => "width: 205px;"}) %>
+      <%= f.select(:cardtype,  options_for_select([['Visa'],['Mastercard'],['Discover'],['American Express']]), {}, {:style => "float: right; width: 43%;"}) %>
       <br>
       <%= f.label :cardnum, "Card Number" %>
       <%= f.text_field :cardnum, class: "input"  %>
@@ -45,4 +45,5 @@
     
       <%= f.submit "Purchase", class: "submitbtn" %>
     </div>
+    <div class="clear"></div>
   <% end %>
