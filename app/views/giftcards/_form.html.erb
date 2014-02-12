@@ -27,9 +27,9 @@
 
       <%= f.label :buyername, "Buyer Name" %><%= f.label :email, "Email Address", :placeholder => "john@example.com", class: "rightlabel" %><br>
       <%= f.text_field :buyername, class: "inputhalf"  %>
-      <%= f.text_field :email, class: "inputrighthalf"  %>
+      <%= f.text_field :email, class: "inputrighthalf"  %></br>
 
-      <%= f.label :phone, "Phone Number" %><%= f.label :cardtype, "Card Type", class: "rightlabel2" %>
+      <%= f.label :phone, "Phone Number" %><%= f.label :cardtype, "Card Type", class: "rightlabel2" %></br>
       <%= f.text_field :phone, class: "inputhalfphone"  %>
       <%= f.select(:cardtype,  options_for_select([['Visa'],['Mastercard'],['Discover'],['American Express']]), {}, {:style => "float: right; width: 43%;"}) %>
       <br>

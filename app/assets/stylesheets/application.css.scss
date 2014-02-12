@@ -31,16 +31,14 @@ html, body {
 	background: url('/assets/header_bg.png') repeat-x;
 
 	#head_container {
-		width: 1200px;
-		position: relative;
-		left: 50%;
-		margin-left: -600px;
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	#logo {
 		display: inline-block;
 		margin-top: 15px;
-		margin-left: 30px;
 	}
 
 	#grad {
@@ -53,11 +51,14 @@ html, body {
 	}
 
 	#links {
+		width: 75%;
+		line-height: 1em;
+		text-align: justify;
+		vertical-align: top;
 		display: inline-block;
 		position: relative;
-		padding-bottom: 8px;
-		top: -65px;
-		left: 0px;
+		padding-top: 2em;
+		left: 0;
 		font-family: 'MarcellusSC-Regular';
 		border-bottom: 2px solid #E0B277;
 
@@ -67,7 +68,6 @@ html, body {
 			font-size: 1.1em;
 			color: #E0B277;			
 			text-shadow: 1px 1px 3px #000;
-			margin-right: 33px;
 		}	
 
 		.link:hover {
@@ -75,14 +75,18 @@ html, body {
 		}
 	}
 
+	.stretch {
+		display: inline-block;
+		width: 100%;
+	}
+
 	#information {
 		font-family: 'Open Sans' sans-serif;
 		font-size: .95em;
+		left: 10%;
+		top: -2em;
+		width: 100%;
 		position: relative;
-		top: -62px;
-		left: 250px;
-		width: 60em;
-		padding-top: 7px;
 		color: #C99C63;
 		letter-spacing: 1px;
 		text-align: center;
@@ -114,7 +118,7 @@ html, body {
 	}
 
 	.wrapper {
-		width: 1100px;
+		width: 80%;
 		margin-left: auto;
 		margin-right: auto;
 		display: table;
@@ -159,7 +163,6 @@ html, body {
 		}
 
 		.copyright {
-			width: 250px;
 			color: #bbb;
 			display: table-cell;
 			text-align: center;
